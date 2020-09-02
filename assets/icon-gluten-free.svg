@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <g id="vegan" transform="translate(-570 -858)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(570 858)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="28.5" cy="28.5" r="28.5" stroke="none"/>
+      <circle cx="28.5" cy="28.5" r="27.5" fill="none"/>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(557.9 846.966)">
+      <path id="Path_17" data-name="Path 17" d="M66.62,22.7s-8.046.6-7.441,9.074A7.981,7.981,0,0,0,66.62,22.7Z" transform="translate(-13.048)" fill="#fff"/>
+      <path id="Path_18" data-name="Path 18" d="M66.075,41.973S59.965,36.71,54.4,43.122C54.4,43.122,60.51,48.385,66.075,41.973Z" transform="translate(-11.173 -6.811)" fill="#fff"/>
+      <path id="Path_19" data-name="Path 19" d="M49.573,24.6s-5.263,6.11,1.149,11.675C50.722,36.275,55.985,30.165,49.573,24.6Z" transform="translate(-8.463 -0.751)" fill="#fff"/>
+      <path id="Path_20" data-name="Path 20" d="M58.175,51.673S52.065,46.41,46.5,52.822C46.5,52.822,52.61,58.085,58.175,51.673Z" transform="translate(-8.052 -10.643)" fill="#fff"/>
+      <path id="Path_21" data-name="Path 21" d="M41.673,34.3s-5.263,6.11,1.149,11.675C42.822,45.975,48.085,39.865,41.673,34.3Z" transform="translate(-5.342 -4.583)" fill="#fff"/>
+      <path id="Path_22" data-name="Path 22" d="M50.175,61.473S44.065,56.21,38.5,62.622C38.5,62.683,44.61,67.946,50.175,61.473Z" transform="translate(-4.892 -14.515)" fill="#fff"/>
+      <path id="Path_23" data-name="Path 23" d="M33.573,44.2s-5.263,6.11,1.149,11.675C34.722,55.875,39.985,49.7,33.573,44.2Z" transform="translate(-2.142 -8.494)" fill="#fff"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="7.985" height="2.299" transform="translate(26.118 54.421) rotate(-50.73)" fill="#fff"/>
+    </g>
+    <line id="Line_3" data-name="Line 3" x2="12" y2="12" transform="translate(578.5 867.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Line_4" data-name="Line 4" x2="12" y2="12" transform="translate(605.5 894.5)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>
