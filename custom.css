@@ -8,6 +8,9 @@ body, html {
 
 }
 
+img {
+	size: 100%;
+}
 
 
 
@@ -98,7 +101,7 @@ padding: 0;
 .hero-btn:hover {
 	text-decoration: none;
 	color: #fff;
-	background-color:#4884C2;
+	background-color:#4885c29d;
 	box-shadow: 0 1px 2px rgba(0,0,0,.8);
 	transform: translateY(2px);
 }
@@ -196,7 +199,9 @@ padding-bottom: 40px;
 	color: #fff;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	line-height: 1;
 }
 
 .featured-row {
@@ -267,7 +272,7 @@ padding-bottom: 40px;
   
   .featured-product-name {
 	font-family: alternate-gothic-compressed, sans-serif;
-	font-size: calc(36px + (46 - 38) * ((100vw - 300px) / (2600 - 300))) !important;
+	font-size: calc(36px + (48 - 36) * ((100vw - 300px) / (2600 - 300))) !important;
 	color: #fff;
 	font-weight: 600;
 	position: relative;
@@ -350,7 +355,9 @@ padding-bottom: 40px;
 	color: #222;
 	font-weight: 600;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	line-height: 1;
 }
 
 .category-row {
@@ -411,9 +418,10 @@ padding-bottom: 40px;
 	font-family: alternate-gothic-compressed, sans-serif;
 	font-size: calc(48px + (64 - 48) * ((100vw - 300px) / (2600 - 300))) !important;
     color: #fff;
-	padding: 10px;
+	padding: 5% 10px 5% 10px;
 	text-align: center;
 	position: relative;
+	
   }
   
   
@@ -485,13 +493,167 @@ padding-bottom: 40px;
 	margin: 0 20px;
 }
 
-/* MEDIA QUERIES  */
+/* Support Farmers and Promotional Video  */
 
-@media only screen and (max-width: 880px) {
-
-
+.support-farmers {
+	height: calc(500px + (700 - 500) * ((100vw - 300px) / (2600 - 300))) !important;
+	background-color: #4884C2;
+	color: #fff;
 }
 
+.support-community-wrapper {
+	padding: 12%
+}
+
+.support-local-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: calc(32px + (90 - 32) * ((100vw - 300px) / (2600 - 300))) !important;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.support-local-text {
+	line-height: 2;
+	font-size: 1.1em;
+	
+}
+
+.promo-video-col {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.promo-video {
+	height: calc(500px + (700 - 500) * ((100vw - 300px) / (2600 - 300))) !important;
+	/* height: 535px; */
+	width: 100%;
+    margin: 0 15px 0 0;
+	background: url('assets/girl-with-chicken-906x600.jpg')
+	no-repeat top center;
+  background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
+	position: relative;
+	
+}
+
+.promo-video-wrapper {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: calc(36px + (48 - 36) * ((100vw - 300px) / (2600 - 300))) !important;
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	z-index: 3;
+	line-height: 1;
+	padding: 40px;
+}
+
+.youtube-icon-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #FF7F00;
+	font-size: 64px;
+}
+
+/* Join Us */
+
+.join-us-col {
+	position: relative;
+	background-color: #464646;
+	height: calc(500px + (700 - 500) * ((100vw - 300px) / (2600 - 300))) !important;
+	color: #fff;
+}
+
+.join-us {
+	height: calc(500px + (700 - 500) * ((100vw - 300px) / (2600 - 300))) !important;
+	/* height: 535px; */
+	width: 100%;
+    margin: 0 15px 0 0;
+	background: url('assets/farmer-join-us-900x600.jpg')
+	no-repeat top center;
+  background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
+	position: relative;
+}
+
+.join-us-btn{
+	color: #fff;
+    font-weight: 500;
+    font-size: calc(14px + (32 - 14) * ((100vw - 300px) / (2600 - 300))) !important;
+    background-color: #FF7F00;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    transition: all .3s ease-in-out;
+}
+
+.join-us-btn:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color:#ff80007a;
+	box-shadow: 0 1px 2px rgba(0,0,0,.8);
+	transform: translateY(2px);
+}
+
+
+
+.join-us-text-highlight{
+	color: #FF7F00;
+	font-weight: 600;
+}
+
+.join-us-wrapper {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 11%;
+}
+
+
+/* New  */
+.join-us-content-block {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -40%);
+	width: 75%;
+	height: 75%;
+}
+
+.join-us-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: calc(46px + (90 - 46) * ((100vw - 300px) / (2600 - 300))) !important;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.join-us-text {
+	font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (2600 - 300))) !important;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 500;
+}
+
+.join-us-btn-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FF7F00;
+    font-size: 64px;
+}
+
+/* MEDIA QUERIES  */
+
+
+@media only screen and (max-width: 1024px) {
+	.join-us-content-block {
+		top: 40%;
+	}
+}
 
 
 @media only screen and (max-width: 990px) {
@@ -507,6 +669,8 @@ padding-bottom: 40px;
 	  .video-item {
 		  margin-bottom: 20px;
 	  }
+	  
+
 	
 }
 
@@ -597,5 +761,28 @@ padding-bottom: 40px;
 		margin-top: 20px;
 		
 	  }
+	  
+	  .support-community-wrapper {
+		padding: 50px 20px 20px 20px;
+	}
+	
+	.join-us-content-block {
+		width: 90% !important;
+	}
+	
+	.join-us {
+		background-position: revert;
+	}
+	
+	.join-us-btn-wrapper {
+	bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	
+	.join-us-content-block {
+		top: 40%;
+	}
+
 	
 }
