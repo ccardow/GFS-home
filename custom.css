@@ -267,12 +267,12 @@ padding-bottom: 40px;
   
   .featured-product-name {
 	font-family: alternate-gothic-compressed, sans-serif;
-	font-size: 46px;
+	font-size: calc(36px + (46 - 38) * ((100vw - 300px) / (2600 - 300))) !important;
 	color: #fff;
 	font-weight: 600;
 	position: relative;
 	z-index: 3;
-	margin-bottom: 0;
+	line-height: 1;
   }
   
   .featured-product-seller {
