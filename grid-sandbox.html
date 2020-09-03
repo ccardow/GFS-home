@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <h1>This is the heading</h1>
+        <div class="row">
+          <div class="img img-1"></div>
+          <div class="wrapper">
+            <div class="img img-2"></div>
+            <div class="img img-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      .container-fluid {
+        background-color: #222;
+        padding-bottom: 50px;
+      }
+      .row {
+        width: 100%;
+
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .wrapper {
+        width: 95%;
+      }
+      .img {
+        margin: 15px;
+      }
+
+      .row {
+        height: 600px;
+      }
+
+      .img-1,
+      .img-2,
+      .img-3 {
+        position: relative;
+      }
+
+      .img-1 {
+        height: 95%;
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      .img-2 {
+        width: 97%;
+        height: 50%;
+      }
+
+      .img-3 {
+        width: 97%;
+        height: calc(45% - 15px);
+      }
+
+      .img-1 {
+        background: url('https://images.unsplash.com/photo-1422205512921-12dac7b3b603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80')
+          no-repeat center center;
+        background-size: cover;
+      }
+      .img-2 {
+        background: url('https://images.unsplash.com/photo-1528696892704-5e1122852276?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')
+          no-repeat center center;
+        background-size: cover;
+      }
+      .img-3 {
+        background: url('https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80')
+          no-repeat center center;
+        background-size: cover;
+      }
+
+      @media screen and (max-width: 600px) {
+        .container-fluid {
+          height: 1230px;
+        }
+        .row {
+          height: 500px;
+          flex-wrap: wrap;
+        }
+
+        .img-1 {
+          margin-bottom: 0;
+        }
+
+        .wrapper {
+          width: 100%;
+        }
+
+        .img-2,
+        .img-3 {
+          margin-left: 0;
+          height: 700%;
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
