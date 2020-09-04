@@ -1,0 +1,23 @@
+.nav-tabs {
+	overflow: hidden;
+	display: -webkit-box;
+	display: -moz-box;
+  }
+  .nav-tabs>li {
+	float: none;
+  }
+  
+  .nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #999;
+}
+  
+  .tab-pane.active {
+	background-color: pink;
+	  height: 300px;
+	  padding: 30px;
+	  max-width: 300px;
+  }

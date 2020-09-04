@@ -943,3 +943,22 @@ select:focus {
     display: none;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .category-img-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .subscribe.clearfix {
+    width: 320px;
+  }
+  
+  .join-us-col {
+    height: 420px;
+}
+}
+
+
+
+
