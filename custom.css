@@ -933,4 +933,9 @@ select:focus {
   .join-us-content-block {
     top: 40%;
   }
+
+  .text-wrapper {
+    width: 64%;
+    margin: 20px auto;
+  }
 }
