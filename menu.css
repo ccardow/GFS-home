@@ -1,10 +1,23 @@
+.nav {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+
 .nav-tabs {
+	
 	overflow: hidden;
 	display: -webkit-box;
 	display: -moz-box;
-  }
+	
+	display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+  
   .nav-tabs>li {
 	float: none;
+	white-space: nowrap;
   }
   
   .nav-tabs>li>a {
@@ -14,10 +27,47 @@
     border-radius: 30px;
     color: #999;
 }
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #FF9700;
+}
+
+.tab-pane.active {
+    background-color: white;
+
+    padding: 30px 90px 30px 30px;
+    max-width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+
+}
+
   
-  .tab-pane.active {
-	background-color: pink;
-	  height: 300px;
-	  padding: 30px;
-	  max-width: 300px;
-  }
+  .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    color: #222;
+}
+
+.tab-content {
+	position: relative;
+}
+
+.all a {
+	color: #FF9700;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	padding: 0;
+	list-style: none;		
+}
+
+
+
+  
