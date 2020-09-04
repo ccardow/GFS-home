@@ -938,4 +938,8 @@ select:focus {
     width: 64%;
     margin: 20px auto;
   }
+
+  .d-none {
+    display: none;
+  }
 }
