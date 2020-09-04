@@ -9,14 +9,15 @@
 
 
 .nav-tabs {
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: auto;
 	display: -webkit-box;
 	display: -moz-box;
 	position: relative;
 	display: flex;
     justify-content: center;
 	flex-wrap: nowrap;
-	-webkit-overflow-scrolling: touch;
+	
 }
   
   .nav-tabs>li {
@@ -57,6 +58,7 @@
 
 .tab-content {
 	position: absolute;
+	z-index: 5;
 }
 
 .all a {
@@ -72,6 +74,53 @@ ul li {
 	list-style: none;		
 }
 
+
+@media only screen and (max-width: 540px) {
+	.nav-tabs {
+		justify-content: flex-start;
+		-webkit-overflow-scrolling: touch;
+
+	}
+	
+	.nav>li>a {
+		text-decoration: none;
+		background-color: #eee;
+		color: #222;
+	}
+	
+	.hide-mobile-p {
+		padding: 0;
+		margin: 0;
+	}
+	
+	/* Scrollbar */
+
+::-webkit-scrollbar {
+	height: 6px;
+	width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: rgb(204, 204, 204);
+   
+	background-clip: content-box;  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #999999;
+   
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #464646; 
+  }
+  
+  
+  
+}
 
 
   
