@@ -1,5 +1,6 @@
 .category-container {
   background-color: #fff;
+  contain: layout;
 }
 
 .nav {
