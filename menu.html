@@ -14,24 +14,25 @@
 <div class="container">
   <div class="col-12">
     <div class="tabbable">
+		
       <ul class="nav nav-tabs justify-content-center">
-        <li class="active"><a href="#tab1" data-toggle="tab">Condiments</a>
+        <li><a data-target="#tab1" class="dropdown-toggle" data-toggle="tab" role="button">Condiments</a>
         </li>
-        <li><a href="#tab2" data-toggle="tab">Fruit</a>
+        <li><a data-target="#tab2" class="dropdown-toggle" data-toggle="tab" role="button">Fruit</a>
         </li>
-        <li><a href="#tab3" data-toggle="tab">Grocery</a>
+        <li><a data-target="#tab3" class="dropdown-toggle" data-toggle="tab" role="button">Grocery</a>
         </li>
-        <li><a href="#tab4" data-toggle="tab">Meat & Dairy</a>
+        <li><a data-target="#tab4" class="dropdown-toggle" data-toggle="tab" role="button">Meat & Dairy</a>
         </li>
-        <li><a href="#tab5" data-toggle="tab">Miscellaneous</a>
+        <li><a data-target="#tab5" class="dropdown-toggle" data-toggle="tab" role="button">Miscellaneous</a>
         </li>
-        <li><a href="#tab6" data-toggle="tab">Pantry</a>
+        <li><a data-target="#tab6" class="dropdown-toggle" data-toggle="tab" role="button">Pantry</a>
         </li>
-        <li><a href="#tab7" data-toggle="tab">Vegetables</a>
+        <li><a data-target="#tab7" class="dropdown-toggle" data-toggle="tab" role="button">Vegetables</a>
         </li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
+        <div class="tab-pane" id="tab1">
 		  <p class="all"><a href="#">All Condiments</a></p> 
 		  <ul>
 			  <li><a href="#">Jam</a></li>
@@ -95,8 +96,20 @@
   </div>
 </div>
 
+<script>
+	$('.nav-tabs').click('shown.bs.tab', 'a', function (e) {
+    if (e.relatedTarget) {
+        $(e.relatedTarget).removeClass('active');
+    };
+})
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
 	
+
+
 </body>
 </html>

@@ -61,16 +61,19 @@
 	z-index: 5;
 }
 
+.all {
+	padding-bottom: 24px;
+}
 .all a {
 	color: #FF9700;
 }
 
 ul {
-	padding-left: 0;
+	padding: 0;
 }
 
 ul li {
-	padding: 0;
+	padding: 0 0 24px 0;
 	list-style: none;		
 }
 
@@ -78,7 +81,7 @@ ul li {
 @media only screen and (max-width: 540px) {
 	.nav-tabs {
 		justify-content: flex-start;
-		-webkit-overflow-scrolling: touch;
+	
 
 	}
 	
