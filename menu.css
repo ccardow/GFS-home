@@ -9,6 +9,8 @@
 }
 
 .nav-tabs {
+  overflow-y: auto;
+  overflow-x: auto;
   display: -webkit-box;
   display: -moz-box;
   position: relative;
@@ -91,8 +93,7 @@
   /* Scrollbar */
 
   ::-webkit-scrollbar {
-    height: 6px;
-    width: 16px;
+    height: 2px;
   }
 
   /* Track */
