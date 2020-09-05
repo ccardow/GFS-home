@@ -10,7 +10,6 @@ img {
   size: 100%;
 }
 
-
 /* UTILITY CLASSES HERE  */
 
 .u-margin-top-50 {
@@ -378,6 +377,7 @@ img {
   width: 150px;
   height: 150px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .fruits {
@@ -950,16 +950,12 @@ select:focus {
     width: 130px;
     height: 130px;
   }
-  
+
   .subscribe.clearfix {
     width: 320px;
   }
-  
+
   .join-us-col {
     height: 420px;
+  }
 }
-}
-
-
-
-
