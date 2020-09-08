@@ -57,9 +57,24 @@
   color: #222;
 }
 
+.tabbable {
+  position: relative;
+  max-width: min-content;
+  margin: 0 auto;
+}
+
 .tab-content {
   position: absolute;
+  top: 50px;
   z-index: 5;
+}
+
+.hide-me {
+  display: none;
+}
+
+.tab-pane > ul {
+  padding-left: 0;
 }
 
 .all {
