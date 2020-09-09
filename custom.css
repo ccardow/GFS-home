@@ -386,11 +386,24 @@ img {
   height: 150px;
   margin: 0 auto;
   cursor: pointer;
+  display: flex;
+  scale: 1;
+  overflow: hidden;
+  
 }
 
-.fruits {
-  background-image: url('assets/fruits-bowl.png');
+.category-img-wrapper > img {
+  width: 100%;
+  transition: all .5s ease-in-out;
 }
+
+.category-img-wrapper > img:hover {
+  transform: scale(1.4);
+}
+
+/* .fruits {
+  background-image: url('assets/fruits-bowl.png');
+} 
 
 .meat {
   background-image: url('assets/meat.png');
@@ -411,6 +424,7 @@ img {
 .tea {
   background-image: url('assets/tea.png');
 }
+*/
 
 /* Featured Videos  */
 
