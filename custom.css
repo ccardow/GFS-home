@@ -946,7 +946,7 @@ select:focus {
 
   .home-hero-img-container {
     height: unset !important;
-    background-image: url('assets/hero-600x2000.jpg');
+    background-image: url('assets/hero-600x800.jpg');
   }
 
   .featured-row {
