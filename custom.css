@@ -392,12 +392,12 @@ img {
   
 }
 
-.category-img-wrapper > img {
+.category-img-wrapper > a > img {
   width: 100%;
   transition: all .5s ease-in-out;
 }
 
-.category-img-wrapper > img:hover {
+.category-img-wrapper > a > img:hover {
   transform: scale(1.4);
 }
 
