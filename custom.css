@@ -20,6 +20,14 @@ img {
   margin-bottom: 30px;
 }
 
+
+/* LAZY LOADING   */
+
+.lazy.lazy-loaded {
+  background-image: none;
+  background-color: #F1F1FA;
+}
+
 /* HERO */
 
 .home-hero-row {
@@ -539,7 +547,25 @@ img {
   position: relative;
 }
 
+.promo-video:hover .overlay {
+  height: 30%;
+}
+
 .promo-video-wrapper {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  padding: 0 30px 0 30px;
+}
+
+.promo-video-123 {
   font-family: alternate-gothic-compressed, sans-serif;
   font-size: calc(
     36px + (48 - 36) * ((100vw - 300px) / (2600 - 300))
@@ -689,7 +715,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #464646;
+  background-color: #222;
   overflow: hidden;
   width: 100%;
   height: 0;

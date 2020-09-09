@@ -233,7 +233,7 @@
       <div class="container featured-content-container">
         <p class="section-title-light">FEATURED PRODUCTS</p>
         <div class="row featured-row">
-          <div class="img featured-product-1 lazy">
+          <div class="img featured-product-1 lazy lazy-loaded">
             <div class="featured-product-wrapper">
               <p class="featured-product-name">100% Pure Virgin Oil, 1 liter</p>
               <div class="featured-product-seller">ACME Pure Oil Farms</div>
@@ -242,7 +242,7 @@
             <a class="featured-product-link" href="#">Shop Now</a>
           </div>
           <div class="featured-wrapper">
-            <div class="img featured-product-2 lazy">
+            <div class="img featured-product-2 lazy lazy-loaded">
               <div class="featured-product-wrapper">
                 <p class="featured-product-name">Goat Cheese, 1lb</p>
                 <div class="featured-product-seller">ACME Goat Farm</div>
@@ -250,7 +250,7 @@
               </div>
               <a class="featured-product-link" href="#">Shop Now</a>
             </div>
-            <div class="img featured-product-3 lazy">
+            <div class="img featured-product-3 lazy lazy-loaded">
               <div class="featured-product-wrapper">
                 <p class="featured-product-name">Select Vegetables, 5lbs</p>
                 <div class="featured-product-seller">Jack and Jill Farms</div>
@@ -412,8 +412,14 @@
         </div>
 
         <div class="col col-md-6 promo-video-col">
-          <div class="img promo-video lazy">
-            <div class="promo-video-wrapper">
+          <div class="img promo-video lazy lazy-loaded">
+            <div class="overlay">
+              <div class="promo-video-wrapper">
+                <h2>Header here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nulla eu risus ornare tincidunt.</p>
+              </div>
+            </div>
+            <div class="promo-video-123">
               <p class="promo-video-header">
                 How it works... <br />As simple as 1, 2, 3.
               </p>
@@ -433,7 +439,7 @@
     <div class="container-fluid join-us-container">
       <div class="row support-farmers-row">
         <div class="col col-md-6 promo-video-col">
-          <div class="img join-us lazy">
+          <div class="img join-us lazy lazy-loaded">
             <div class="join-us-btn-wrapper">
               <div class="join-us-btn">Join Us</div>
             </div>
@@ -480,7 +486,7 @@
 
     <div class="container-fluid blog-container">
       <div class="row blog-row">
-        <div class="col-xs-12 col-sm-6 col-md-3 recipe">
+        <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded">
           <div class="overlay">
             <div class="recipe-content-wrapper">
               <h2>Header here</h2>
@@ -506,7 +512,7 @@
           
           <div class="blog-block">BLOG</div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy d-none">
+        <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded d-none">
           <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
           <div class="recipe-block">RECIPE</div>
         </div>
