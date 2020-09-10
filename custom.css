@@ -445,9 +445,11 @@ img {
     48px + (64 - 48) * ((100vw - 300px) / (2600 - 300))
   ) !important;
   color: #fff;
-  padding: 5% 10px 5% 10px;
+  padding: 2.5% 10px 2.5% 10px;
   text-align: center;
   position: relative;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .easy-boxes > p {
@@ -455,15 +457,19 @@ img {
   margin: 0;
 }
 
+.easy-boxes > p > i {
+  font-size: 90px;
+}
+
 .so-fast {
   background-color: #c364b4;
 }
 
-.so-fast::before {
+.so-fast::before, .so-fresh::before, .so-easy::before {
   content: '';
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   right: -10px;
   top: 40%;
   background-color: inherit;
@@ -475,32 +481,26 @@ img {
   background-color: #73c364;
 }
 
-.so-fresh::before {
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  right: -10px;
-  top: 40%;
-  background-color: inherit;
-  transform: rotate(-45deg);
-  z-index: 10;
-}
-
 .so-easy {
   background-color: #c3c064;
 }
 
-.so-easy::before {
-  content: '';
+.so-easy-rollover {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  right: -10px;
-  top: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20%;
   background-color: inherit;
-  transform: rotate(-45deg);
-  z-index: 10;
+  line-height: 1;
+  font-size: 46px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.so-easy-rollover:hover {
+  opacity: 1;
 }
 
 .eat-chill {
@@ -567,7 +567,6 @@ img {
 
 .promo-video-wrapper {
   color: white;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -848,12 +847,14 @@ img {
   font-size: 56px;
   text-transform: uppercase;
   line-height: 1;
+  font-weight: 600;
 }
 
 .sub-title-color {
   font-family: alternate-gothic-compressed, sans-serif;
   text-align: center;
   font-size: 19px;
+  font-weight: 500;
   line-height: 1;
   margin-top: -16px;
 }
@@ -861,7 +862,7 @@ img {
 .subscribe {
   border: 1px solid #222;
   margin: auto;
-  width: 360px;
+  width: 390px;
 }
 
 .subscribe input {
@@ -897,6 +898,11 @@ select:focus {
 @media only screen and (max-width: 1024px) {
   .join-us-content-block {
     top: 40%;
+  }
+  
+  .so-easy-rollover {
+    padding:  15%;
+    font-size: 40px;
   }
 }
 
@@ -1038,6 +1044,15 @@ select:focus {
 
   .d-none {
     display: none;
+  }
+  
+  .so-easy-rollover {
+    padding:  15%;
+    font-size: 30px;
+  }
+  
+  .subscribe.clearfix {
+    width: 360px;
   }
 }
 

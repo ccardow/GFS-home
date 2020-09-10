@@ -24,6 +24,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       rel="stylesheet"
     />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    
 
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="menu.css" />
@@ -370,21 +373,33 @@
 
     <div class="container-fluid so-easy-section">
       <div class="row so-easy-row">
-        <div class="col-xs-6 col-md-3 easy-boxes so-fast">
-          <p class="icon">SO FAST!</p>
-          <p><i class="icon fas fa-shipping-fast"></i></p>
+        <div class="wow animated slideInLeft col-xs-6 col-md-3 easy-boxes so-fast">
+          <p class="icon-so-easy">SO FAST!</p>
+          <p><i class="wow bounceInLeft fas fa-shipping-fast" data-wow-delay="0.3s"></i></p>
+          <div class="so-easy-rollover">
+            <p class="so-easy-rollover-content">Quickly search for local farms in your area</p>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-3 easy-boxes so-fresh">
-          <p>SO FRESH!</p>
-          <p><i class="icon fas fa-leaf"></i></p>
+        <div class="wow animated slideInLeft col-xs-6 col-md-3 easy-boxes so-fresh">
+          <p class="icon-so-easy">SO FRESH!</p>
+          <p><i class="fas fa-leaf"></i></p>
+          <div class="so-easy-rollover">
+            <p class="so-easy-rollover-content">Place your order for fresh & flavourful food</p>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-3 easy-boxes so-easy">
-          <p>SO EASY!</p>
-          <p><i class="icon fab fa-simplybuilt"></i></p>
+        <div class="wow animated slideInRight col-xs-6 col-md-3 easy-boxes so-easy">
+          <p class="icon-so-easy">SO EASY!</p>
+          <p><i class="fab fa-simplybuilt"></i></p>
+          <div class="so-easy-rollover">
+            <p class="so-easy-rollover-content">Food is delivered to your door, no hassles</p>
+          </div>
         </div>
-        <div class="col-xs-6 col-md-3 easy-boxes eat-chill">
-          <p>EAT & CHILL</p>
-          <p><i class="icon fas fa-utensils"></i></p>
+        <div class="wow animated slideInRight col-xs-6 col-md-3 easy-boxes eat-chill">
+          <p class="icon-so-easy">EAT & CHILL</p>
+          <p><i class="fas fa-utensils"></i></p>
+          <div class="so-easy-rollover">
+            <p class="so-easy-rollover-content">Pick your favourite farms & get regular deliveries</p>
+          </div>
         </div>
       </div>
     </div>
@@ -587,6 +602,9 @@
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
 
     <script language="javascript" type="text/javascript">
       $(function () {
@@ -662,7 +680,42 @@
     window.addEventListener("orientationChange", lazyload);
   }
 })
-
     </script>
+    
+<script language="javascript" type="text/javascript">
+  $( document ).ready(function() {
+  new WOW().init();
+});
+</script>
+
+
+    
+    <!-- <script language="javascript" type="text/javascript">
+      document.addEventListener('scroll', function (e) {
+  // var top  = window.pageYOffset + window.innerHeight,
+      // isVisible = top > document.querySelector('.icon-so-easy').offsetTop;
+      top1 = (window.pageYOffset * 0.1) + window.pageYOffset;
+      target = $(".so-easy-section").offset().top;
+      isVisible = (parseInt(top1) > parseInt(target -500) && parseInt(top1) < parseInt(target +500)) ? 1: 0;
+      
+      console.log(parseInt(top1), parseInt(target), isVisible);
+      console.log(parseInt(target -100 ), parseInt(target +100));
+      
+      
+   if (isVisible) {
+    j = document.getElementsByClassName('icon-so-easy');
+    for (i=0; i<j.length; i++){
+      console.log(j[i]);
+      $("."+j[i].classList[0]).delay(500).queue(function(next) {
+       $(this).addClass("animate__animated");next();
+      });
+      
+    }
+    
+    //  document.querySelector('.icon-so-easy')
+   }
+});
+    </script> -->
   </body>
 </html>
+

@@ -67,6 +67,7 @@
   position: absolute;
   top: 50px;
   z-index: 5;
+  width: 100%;
 }
 
 .hide-me {
