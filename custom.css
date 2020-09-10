@@ -726,6 +726,30 @@ img {
   position: relative;
 }
 
+.category-pills-wrapper {
+  position: relative;
+  z-index: 10;
+  left: 20px;
+  
+  width: 80%;
+
+}
+
+.category-pill-items {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+}
+
+.pill-item {
+  background-color: #4884c2;
+  color: #fff;
+  font-size: inherit;
+  margin: 4px;
+  padding: 6px 8px;
+  border-radius: 20px;
+}
+
 .overlay {
   position: absolute;
   bottom: 0;

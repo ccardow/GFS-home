@@ -455,7 +455,7 @@
               <div  type="button"
               class="youtube-btn"
               data-toggle="modal"
-              data-target="#exampleModal">
+              data-target="#exampleModal2">
               <i class="fab fa-youtube"></i>
               </div>
 
@@ -527,6 +527,20 @@
             </div>
           </div> -->
           <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
+          
+          <!-- Category Pills  -->
+          <div class="category-pills-wrapper">
+            <div class="category-pill-items">
+              <div class="pill-item">Pizza</div>
+              <div class="pill-item">Soup</div>
+               <div class="pill-item">Blog</div>
+              <div class="pill-item">Recipe</div>
+              <div class="pill-item">Breakfast</div>
+              <div class="pill-item">Blueberries</div>
+            </div>
+          </div>
+          <!-- End Category Pills  -->
+          
           <div class="recipe-block">RECIPE</div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 blog d-none">
@@ -602,7 +616,7 @@
         <!-- Modal -->
         <div
         class="modal fade"
-        id="exampleModal"
+        id="exampleModal2"
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
@@ -624,10 +638,10 @@
               
             </div>
             <div class="modal-body">
-              <div class="video-box embed-responsive embed-responsive-16by9" id="video-box">
+              <div class="embed-responsive embed-responsive-16by9">
                 
                 <iframe src="//fast.wistia.net/embed/iframe/at6dqipf6r?videoFoam=true"
-allowtransparency="true" title="video-box" frameborder="0" scrolling="no" class="wistia_embed"
+allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="800"></iframe>
 
@@ -736,34 +750,6 @@ oallowfullscreen msallowfullscreen width="800"></iframe>
 });
 </script>
 
-
-    
-    <!-- <script language="javascript" type="text/javascript">
-      document.addEventListener('scroll', function (e) {
-  // var top  = window.pageYOffset + window.innerHeight,
-      // isVisible = top > document.querySelector('.icon-so-easy').offsetTop;
-      top1 = (window.pageYOffset * 0.1) + window.pageYOffset;
-      target = $(".so-easy-section").offset().top;
-      isVisible = (parseInt(top1) > parseInt(target -500) && parseInt(top1) < parseInt(target +500)) ? 1: 0;
-      
-      console.log(parseInt(top1), parseInt(target), isVisible);
-      console.log(parseInt(target -100 ), parseInt(target +100));
-      
-      
-   if (isVisible) {
-    j = document.getElementsByClassName('icon-so-easy');
-    for (i=0; i<j.length; i++){
-      console.log(j[i]);
-      $("."+j[i].classList[0]).delay(500).queue(function(next) {
-       $(this).addClass("animate__animated");next();
-      });
-      
-    }
-    
-    //  document.querySelector('.icon-so-easy')
-   }
-});
-    </script> -->
   </body>
 </html>
 
