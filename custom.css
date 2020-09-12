@@ -7,7 +7,7 @@ html {
 }
 
 img {
-  size: 100%;
+  width: 100%;
 }
 
 /* UTILITY CLASSES HERE  */
@@ -28,12 +28,21 @@ img {
   background-color: #F1F1FA;
 }
 
+/* VIBE VAN  */
+
+
+.pos-z-index {
+  position: relative;
+  z-index: 10;
+}
+
 /* HERO */
 
 .home-hero-row {
   padding-top: 120px;
   display: flex;
   align-items: center;
+
 }
 
 .home-hero {
@@ -43,7 +52,7 @@ img {
 
 .home-hero-img-container {
   position: relative;
-  background-image: url('assets/hero.jpg');
+  background-image: url('assets/hero-blurred.jpg');
   background-size: cover;
   background-position: center;
   /* height: calc(750px + (300 - 100) * ((100vw - 264px) / (2600 - 300))); */
@@ -969,9 +978,56 @@ select:focus {
   .join-us-col {
     height: 370px;
   }
-}
+  
+  }
 
-@media only screen and (max-width: 767px) {
+  
+@media only screen and (max-width:990px) and (min-width: 769px) {
+  .vibe-van {
+    position: absolute;
+top: 108px;
+width: 50%;
+right: 20px;
+z-index: 10;
+  }
+}
+  
+@media only screen and (max-width:1440px) and (min-width: 991px) {
+    
+  .vibe-van {
+    position: absolute;
+    top: 20px;
+    width: 46%;
+    right: 96px;
+    z-index: 10;
+  }
+  }
+  
+  @media only screen and (max-width: 1920px) and (min-width: 1441px) {
+    .vibe-van {
+      position: absolute;
+      top: 20px;
+      width: 50%;
+      right: 80px;
+      z-index: 10;
+    }
+  }
+  
+@media only screen and (max-width: 2600px) and (min-width: 1921px) {
+    .vibe-van {
+      position: absolute;
+width: 50%;
+right: 64px;
+z-index: 10;
+    }
+  }
+  
+
+
+  
+
+
+@media only screen and (max-width: 768px) {
   .home-hero-row {
     flex-direction: column;
     text-align: center;
@@ -1006,7 +1062,7 @@ select:focus {
 
   .home-hero-img-container {
     height: unset !important;
-    background-image: url('assets/hero-600x800.jpg');
+    background-image: url('assets/hero-600x800-blur.jpg');
   }
 
   .featured-row {
@@ -1034,6 +1090,15 @@ select:focus {
   .container.featured-content-container {
     margin: 0;
   }
+  
+  .vibe-van {
+    width: 50%
+  }
+  
+  .home-hero-row {
+    padding-top: 0;
+  }
+  
 }
 
 @media only screen and (max-width: 540px) {
@@ -1109,4 +1174,7 @@ select:focus {
   .join-us-col {
     height: 420px;
   }
+  
+
+  
 }
