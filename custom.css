@@ -39,7 +39,7 @@ img {
 /* HERO */
 
 .home-hero-row {
-  padding-top: 120px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
 
@@ -123,10 +123,7 @@ img {
   transform: translateY(2px);
 }
 
-.callout-row {
-  margin-top: 120px;
-  /* position: relative; */
-}
+
 
 .hero-callout {
   position: relative;
@@ -985,7 +982,7 @@ select:focus {
 @media only screen and (max-width:990px) and (min-width: 769px) {
   .vibe-van {
     position: absolute;
-top: 108px;
+top: 40px;
 width: 50%;
 right: 20px;
 z-index: 10;
@@ -993,10 +990,9 @@ z-index: 10;
 }
   
 @media only screen and (max-width:1440px) and (min-width: 991px) {
-    
   .vibe-van {
     position: absolute;
-    top: 20px;
+    top: 0;
     width: 46%;
     right: 96px;
     z-index: 10;
@@ -1013,7 +1009,7 @@ z-index: 10;
     }
   }
   
-@media only screen and (max-width: 2600px) and (min-width: 1921px) {
+@media only screen and (max-width: 10000px) and (min-width: 1921px) {
     .vibe-van {
       position: absolute;
 width: 50%;
@@ -1097,6 +1093,10 @@ z-index: 10;
   
   .home-hero-row {
     padding-top: 0;
+  }
+  
+  .callout-row {
+    margin-top: 0;
   }
   
 }
