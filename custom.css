@@ -6,9 +6,6 @@ html {
   background-color: #4884c2;
 }
 
-img {
-  width: 100%;
-}
 
 /* UTILITY CLASSES HERE  */
 
@@ -81,7 +78,7 @@ img {
   color: #fff !important;
   font-weight: 600;
   font-size: calc(
-    120px + (170 - 100) * ((100vw - 300px) / (2600 - 300))
+    90px + (170 - 90) * ((100vw - 300px) / (2600 - 300))
   ) !important;
   /* font-size: 170px !important; */
   text-transform: uppercase;
@@ -93,12 +90,9 @@ img {
   font-family: alternate-gothic-compressed, sans-serif;
   color: #fff !important;
   font-weight: 400 !important;
-  font-size: calc(
-    32px + (48 - 36) * ((100vw - 300px) / (2600 - 300))
-  ) !important;
-  /* font-size: 48px !important; */
+  font-size: 46px !important;
   line-height: 0.9;
-  margin-top: -8px;
+  margin: 0 15px 15px 15px;
 }
 
 .hero-btn {
@@ -354,6 +348,7 @@ img {
   text-align: center;
   padding-top: 200px;
   border-bottom: 1px solid #ccc;
+  min-height: 800px;
 }
 
 /* Shop by Category  */
@@ -981,21 +976,59 @@ select:focus {
   
 @media only screen and (max-width:990px) and (min-width: 769px) {
   .vibe-van {
-    position: absolute;
-top: 40px;
-width: 50%;
-right: 20px;
-z-index: 10;
+  position: absolute;
+  top: 40px;
+  width: 50%;
+  right: 20px;
+  z-index: 10;
   }
-}
   
-@media only screen and (max-width:1440px) and (min-width: 991px) {
+  .hero-btn {
+    margin: 15px 0 !important;
+  }
+  
+  .hero-subhead {
+    margin: unset;
+    font-size: 36px !important;
+  }
+  
+  
+}
+
+@media only screen and (max-width:1440px) and (min-width: 1200px) {
   .vibe-van {
     position: absolute;
-    top: 0;
+    top: 30px;
+    width: 40%;
+    right: 96px;
+    z-index: 10;
+  }
+  
+  .hero-btn {
+    margin: 15px 0;
+  }
+  
+  .callout-row {
+    margin-top: 30px;
+  }
+  
+}
+  
+@media only screen and (max-width:1199px) and (min-width: 991px) {
+  .vibe-van {
+    position: absolute;
+    top: 30px;
     width: 46%;
     right: 96px;
     z-index: 10;
+  }
+  
+  .callout-row {
+    margin-top: 0;
+  }
+  
+  .hero-btn {
+    margin: 15px 0;
   }
   }
   
@@ -1003,18 +1036,34 @@ z-index: 10;
     .vibe-van {
       position: absolute;
       top: 20px;
-      width: 50%;
-      right: 80px;
+      width: 44%;
+      right: 100px;
       z-index: 10;
+    }
+    
+    .hero-btn {
+      margin: 15px 0;
+    }
+    
+    .callout-row {
+      margin-top: 30px;
     }
   }
   
-@media only screen and (max-width: 10000px) and (min-width: 1921px) {
+@media only screen and (max-width: 3840px) and (min-width: 1921px) {
     .vibe-van {
       position: absolute;
 width: 50%;
 right: 64px;
 z-index: 10;
+    }
+    
+    .hero-btn {
+      margin: 15px 0;
+    }
+    
+    .callout-row {
+      margin-top: 20px;
     }
   }
   
@@ -1099,6 +1148,10 @@ z-index: 10;
     margin-top: 0;
   }
   
+  .hero-btn {
+    margin: 15px 0 !important;
+  }
+  
 }
 
 @media only screen and (max-width: 540px) {
@@ -1159,6 +1212,11 @@ z-index: 10;
   .subscribe.clearfix {
     width: 360px;
   }
+  
+  .vibe-van {
+    width: 64%;
+  }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -1174,7 +1232,5 @@ z-index: 10;
   .join-us-col {
     height: 420px;
   }
-  
-
   
 }
