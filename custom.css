@@ -147,6 +147,10 @@ button.hero-btn, button.join-us-btn {
   transform: translateY(2px);
 }
 
+button.hero-btn:hover a, button.join-us-btn:hover a {
+  color: #FF9700 !important;
+  }
+
 
 
 .hero-callout {
@@ -256,6 +260,14 @@ button.callout-btn:hover {
 
 .clear-fix {
   clear: both;
+  flex-basis: 0;
+  order: 1;
+}
+
+.clear-fix:before,
+.clear-fix:after {
+  flex-basis: 0;
+  order: 1;
 }
 
 /* Featured Products */
@@ -263,7 +275,7 @@ button.callout-btn:hover {
 .container-fluid.featured-section {
   background-color: #222;
   padding-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 210px;
 }
 
 .section-title-light {
@@ -995,10 +1007,10 @@ select:focus {
   }
 }
 
-@media only screen and (max-width: 990px) {
+/* @media only screen and (max-width: 990px) {
   .container-fluid.featured-section {
     margin-top: 180px;
-  }
+  } */
 
   .so-fast::before,
   .so-easy::before,
@@ -1039,7 +1051,6 @@ select:focus {
     margin: unset;
     font-size: 36px !important;
   }
-  
   
 }
 
@@ -1114,11 +1125,6 @@ z-index: 10;
       margin-top: 20px;
     }
   }
-  
-
-
-  
-
 
 @media only screen and (max-width: 768px) {
   .home-hero-row {
@@ -1180,8 +1186,8 @@ z-index: 10;
     width: 100%;
   }
 
-  .container.featured-content-container {
-    margin: 0;
+  .container-fluid.featured-section {
+    margin-top: 30px;
   }
   
   .vibe-van {
