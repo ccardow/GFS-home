@@ -249,9 +249,14 @@ button.callout-btn:hover {
   padding-top: 20px;
 }
 
-.icon-row {
+.row.icon-row {
   display: flex;
     flex-wrap: wrap;
+}
+
+.row.icon-row::after, .row.icon-row::before{
+  content: normal;
+display: none;
 }
 
 .natural-icons {
