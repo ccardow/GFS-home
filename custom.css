@@ -173,7 +173,6 @@ button.hero-btn:hover a, button.join-us-btn:hover a {
 .callout-text {
   color: #fff !important;
   font-size: 16px !important;
-  font-weight: 500 !important;
   line-height: 1.8 !important;
 }
 
@@ -250,12 +249,22 @@ button.callout-btn:hover {
   padding-top: 20px;
 }
 
+.icon-row {
+  display: flex;
+    flex-wrap: wrap;
+}
+
 .natural-icons {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   color: #fff;
   font-size: 14px;
+}
+
+.natural-icons > img {
+  margin-bottom: 8px;
+  height: 90px;
 }
 
 .clear-fix {
