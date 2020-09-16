@@ -1027,11 +1027,7 @@ select:focus {
     padding-bottom: 40px;
   }
 
-  .join-us-col {
-    height: 370px;
-  }
-  
-  }
+
 
   
 @media only screen and (max-width:990px) and (min-width: 769px) {
