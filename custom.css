@@ -3,7 +3,7 @@
 body,
 html {
   font-family: 'Montserrat', sans-serif;
-  background-color: #4884c2;
+  background-color: #ff9700;
 }
 
 /* UTILITY CLASSES HERE  */
@@ -26,25 +26,26 @@ html {
 /* VIBE VAN  */
 
 .vibe-van {
-  width: 36%;
+  width: 40%;
 }
 
 .animate__animated.bounceInRight {
-  --animate-duration: 1.5s;
+  --animate-duration: 2s;
 }
 
 .pos-z-index {
   position: relative;
   z-index: 10;
+  contain: paint;
 }
 
 /* HERO */
 
 .home-hero-row {
+  position: relative;
   padding-top: 50px;
   display: flex;
   align-items: center;
-  contain: paint;
 }
 
 .home-hero {
@@ -116,7 +117,7 @@ html {
 
 button.hero-btn,
 button.join-us-btn {
-  background-color: #4884c2;
+  background-color: #ff9700;
   border-radius: 4px;
   border: solid 1px #ffffff;
   display: inline-block;
@@ -161,7 +162,7 @@ button.join-us-btn:hover a {
 
 .hero-callout {
   position: relative;
-  background-color: #ff7900de;
+  background-color: #4884c2e6;
   z-index: 4;
   border-radius: 8px;
   text-align: center;
@@ -1052,16 +1053,17 @@ select:focus {
 }
 
 .support-farmers {
-  height: min-content;
+  height: 535px;
   padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 990px) and (min-width: 769px) {
   .vibe-van {
     position: absolute;
-    bottom: 0;
+    bottom: -16px;
     right: 20px;
     z-index: 10;
+    width: 50%;
   }
 
   .hero-btn {
@@ -1070,14 +1072,14 @@ select:focus {
 
   .hero-subhead {
     margin: unset;
-    font-size: 36px !important;
+    font-size: 32px !important;
   }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 1200px) {
   .vibe-van {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     right: 96px;
     z-index: 10;
   }
@@ -1094,7 +1096,7 @@ select:focus {
 @media only screen and (max-width: 1200px) and (min-width: 991px) {
   .vibe-van {
     position: absolute;
-    bottom: 0;
+    bottom: -16px;
     right: 96px;
     z-index: 10;
   }
@@ -1112,7 +1114,7 @@ select:focus {
   .vibe-van {
     position: absolute;
     right: 100px;
-    bottom: 0;
+    bottom: -50px;
     z-index: 10;
   }
 
@@ -1128,9 +1130,10 @@ select:focus {
 @media only screen and (max-width: 3840px) and (min-width: 1921px) {
   .vibe-van {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     right: 64px;
     z-index: 10;
+    width: 44%;
   }
 
   .hero-btn {
@@ -1150,6 +1153,11 @@ select:focus {
   .container.featured-content-container {
     margin-top: 160px;
   }
+
+  .callout-headline {
+    font-size: 56px !important;
+    line-height: 1;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1168,6 +1176,10 @@ select:focus {
   .home-hero-row {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-subhead {
+    font-size: 36px !important;
   }
 
   .hero-callout {
@@ -1261,7 +1273,7 @@ select:focus {
 @media only screen and (max-width: 540px) {
   .callout-headline {
     line-height: 1;
-    font-size: 84px !important;
+    font-size: 64px !important;
   }
 
   .hero-subhead {
