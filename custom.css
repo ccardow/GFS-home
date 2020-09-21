@@ -3,7 +3,6 @@
 body,
 html {
   font-family: 'Montserrat', sans-serif;
-  background-color: #ff9700;
 }
 
 /* UTILITY CLASSES HERE  */
@@ -21,6 +20,12 @@ html {
 .lazy.lazy-loaded {
   background-image: none;
   background-color: #f1f1fa;
+}
+
+
+.container-fluid.global-bg-color-bg {
+  padding: 0;
+  background-color: #ff9700;
 }
 
 /* VIBE VAN  */
@@ -49,7 +54,7 @@ html {
 }
 
 .home-hero {
-  padding: 0;
+  padding: 0 !important;
   background-color: #4884c2;
 }
 
