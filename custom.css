@@ -25,7 +25,7 @@ html {
 
 .container-fluid.global-bg-color-bg {
   padding: 0;
-  background-color: #ff9700;
+  background-color: #4884c2;
 }
 
 /* VIBE VAN  */
@@ -122,7 +122,7 @@ html {
 
 button.hero-btn,
 button.join-us-btn {
-  background-color: #ff9700;
+  background-color: #4884c2;
   border-radius: 4px;
   border: solid 1px #ffffff;
   display: inline-block;
@@ -165,9 +165,14 @@ button.join-us-btn:hover a {
   color: #ff9700 !important;
 }
 
+.link a {
+  color: #fff;
+  font-weight: 500;
+}
+
 .hero-callout {
   position: relative;
-  background-color: #4884c2e6;
+  background-color: #ff7900de;
   z-index: 4;
   border-radius: 8px;
   text-align: center;
@@ -184,7 +189,7 @@ button.join-us-btn:hover a {
 
 .callout-headline span {
   font-weight: 600 !important;
-  color: #73c364;
+  color: #19FF26;
   
 }
 
@@ -650,7 +655,7 @@ button.callout-btn:hover {
   color: #fff;
 }
 
-.support-community-wrapper {
+.support-community-wrapper, .aboriginal-wrapper {
   padding: 50px 12% 0 12%;
 }
 
@@ -663,7 +668,7 @@ button.callout-btn:hover {
   line-height: 1;
 }
 
-.support-local-text {
+.support-local-text, .aboriginal-text, .usa-text {
   line-height: 2;
   font-size: 1.1em;
 }
@@ -813,6 +818,78 @@ button.callout-btn:hover {
   color: #ff7f00;
   font-size: 64px;
 }
+
+/* Aboriginals  */
+
+.aboriginal {
+  height: 535px;
+  background: -webkit-radial-gradient(left top , circle cover , #ff9700 , #ff7f00 100%);
+  color: #fff;
+}
+
+.aboriginal-wrapper {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.aboriginal-header {
+  font-family: alternate-gothic-compressed, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* USA  */
+
+.usa {
+  height: 100%;
+  height: 535px;
+  width: 100%;
+  margin: 0 15px 0 0;
+  background: url('assets/Aerial-Hyland.jpg') no-repeat top center;
+  background-size: cover;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+}
+
+.usa-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('assets/american-flag.jpg') no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  z-index: 2;
+}
+
+.usa-wrapper {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  color: #fff !important;
+  position: relative;
+  z-index: 3;
+}
+
+.usa-header {
+  font-family: alternate-gothic-compressed, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+
+
 
 /* Blogs and recipes  */
 
@@ -1307,7 +1384,7 @@ select:focus {
     margin-top: 20px;
   }
 
-  .support-community-wrapper {
+  .support-community-wrapper, .aboriginal-wrapper {
     padding: 50px 20px 30px 20px;
   }
 
