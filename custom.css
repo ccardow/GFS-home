@@ -172,9 +172,15 @@ button.join-us-btn:hover a {
 .callout-headline {
   font-family: alternate-gothic-compressed, sans-serif;
   color: #fff !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   font-size: 70px !important;
   margin-bottom: 0 !important;
+}
+
+.callout-headline span {
+  font-weight: 600 !important;
+  color: #73c364;
+  
 }
 
 .callout-text {
@@ -635,7 +641,7 @@ button.callout-btn:hover {
 
 .support-farmers {
   height: 535px;
-  background-color: #4884c2;
+  background: -webkit-radial-gradient(left top , circle cover , rgb(12, 180, 206) , rgb(72, 132, 194) 100%);
   color: #fff;
 }
 
@@ -751,7 +757,7 @@ button.callout-btn:hover {
 }
 
 .join-us-text-highlight {
-  color: #ff7f00;
+  color: #ff9700;
   font-weight: 600;
 }
 
@@ -831,6 +837,15 @@ button.callout-btn:hover {
   display: inline-flex;
   flex-wrap: wrap;
 }
+
+.blog-badge {
+  background-color: #222 !important;
+  color: #fff;
+  font-size: inherit;
+  margin: 4px;
+  padding: 6px 8px;
+}
+
 
 .pill-item {
   background-color: #4884c2;
@@ -926,7 +941,7 @@ button.callout-btn:hover {
 }
 
 .recipe-block {
-  background-color: #ff7f00;
+  background-color: #ff9700;
   z-index: 5;
 }
 
