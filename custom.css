@@ -657,6 +657,10 @@ button.callout-btn:hover {
 
 .support-community-wrapper, .aboriginal-wrapper {
   padding: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .support-local-header {
