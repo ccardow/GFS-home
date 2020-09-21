@@ -656,7 +656,7 @@ button.callout-btn:hover {
 }
 
 .support-community-wrapper, .aboriginal-wrapper {
-  padding: 50px 12% 0 12%;
+  padding: 10%;
 }
 
 .support-local-header {
@@ -664,7 +664,7 @@ button.callout-btn:hover {
   font-size: calc(
     36px + (90 - 36) * ((100vw - 300px) / (2600 - 300))
   ) !important;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -781,12 +781,11 @@ button.callout-btn:hover {
 
 /* New  */
 .join-us-content-block {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -40%);
-  width: 75%;
-  height: 75%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .join-us-header {
@@ -794,7 +793,7 @@ button.callout-btn:hover {
   font-size: calc(
     46px + (90 - 46) * ((100vw - 300px) / (2600 - 300))
   ) !important;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
 }
 
@@ -1385,7 +1384,11 @@ select:focus {
   }
 
   .support-community-wrapper, .aboriginal-wrapper {
-    padding: 50px 20px 30px 20px;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
 
   .join-us-content-block {
