@@ -669,9 +669,7 @@ button.callout-btn:hover {
 
 .support-local-header {
   font-family: alternate-gothic-compressed, sans-serif;
-  font-size: calc(
-    36px + (90 - 36) * ((100vw - 300px) / (2600 - 300))
-  ) !important;
+  font-size: 60px;
   font-weight: 500;
   line-height: 1;
 }
@@ -800,9 +798,7 @@ button.callout-btn:hover {
 
 .join-us-header {
   font-family: alternate-gothic-compressed, sans-serif;
-  font-size: calc(
-    46px + (90 - 46) * ((100vw - 300px) / (2600 - 300))
-  ) !important;
+  font-size: 60px;
   font-weight: 500;
   line-height: 1;
 }
