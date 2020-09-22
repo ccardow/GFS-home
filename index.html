@@ -121,10 +121,45 @@
       </div>
     </div>
   </div>
+  
+  
+ 
+  
+  
 
   <!-- HERO SECTION -->
 
   <div class="jumbotron home-hero">
+    
+    <!-- Mobile Locations Toggle dropdown hide past 768px -->
+    
+    <div class="collapsed-delivery-locations-toggle">
+      <p class="collapsed-toggle-find-out-more">
+        Free delivery. Find out more.
+      </p>
+    </div>
+    
+    <div class="expanded-delivery-locations-toggle">
+      
+      <div class="expanded-delivery-locations-container">
+        
+     
+      <p>
+        Free delivery on all orders. Orders placed by 12:00 PM are available for next delivery day Mon-Sat. </p>
+        
+        <p>We deliver in these locations:</p> 
+        
+        <ul>
+          <li>Abbotsford</li> <li>Aldergrove</li> <li>Burnaby</li> <li>Chilliwack</li> <li>Coquitlam</li> <li>Delta</li> <li>Fort Langley</li> <li>Langley</li> <li>Maple Ridge</li> <li>Mission</li> <li>Pitt Meadows</li> <li>Surrey</li> <li>White Rock</li> <li> Port Coquitlam</li> <li>Port Moody</li> <li>New Westminster</li>
+        </ul>
+      </p>
+      
+    </div>
+    
+    
+    </div>
+
+    
     <div class="home-hero-img-container">
       <div class="container pos-z-index">
         <div class="row home-hero-row">
@@ -705,6 +740,30 @@
       new WOW().init();
     });
   </script>
+  
+  
+  <script>
+
+    $(document).ready(function(){
+      $( ".expanded-delivery-locations-toggle" ).hide();
+      $(this).click(function(){
+      $(".expanded-delivery-locations-toggle").slideToggle();
+        });
+    });
+
+</script>
+      
+  <!-- <script>
+    $(document).ready(function(){
+      $( ".expanded-delivery-locations-toggle" ).hide();
+      
+      $( ".collapsed-delivery-locations-toggle" ).click(function() {
+      $( ".expanded-delivery-locations-toggle" ).slideToggle( "slow", function() {
+        });
+});
+    });
+    </script> -->
+    
     </div>
 </body>
 
