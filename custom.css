@@ -22,7 +22,6 @@ html {
   background-color: #f1f1fa;
 }
 
-
 .container-fluid.global-bg-color-bg {
   padding: 0;
   background-color: #4884c2;
@@ -189,8 +188,7 @@ button.join-us-btn:hover a {
 
 .callout-headline span {
   font-weight: 600 !important;
-  color: #19FF26;
-  
+  color: #19ff26;
 }
 
 .callout-text {
@@ -651,11 +649,17 @@ button.callout-btn:hover {
 
 .support-farmers {
   height: 535px;
-  background: -webkit-radial-gradient(left top , circle cover , rgb(12, 180, 206) , rgb(72, 132, 194) 100%);
+  background: -webkit-radial-gradient(
+    left top,
+    circle cover,
+    rgb(12, 180, 206),
+    rgb(72, 132, 194) 100%
+  );
   color: #fff;
 }
 
-.support-community-wrapper, .aboriginal-wrapper {
+.support-community-wrapper,
+.aboriginal-wrapper {
   padding: 10%;
   display: flex;
   flex-direction: column;
@@ -672,7 +676,9 @@ button.callout-btn:hover {
   line-height: 1;
 }
 
-.support-local-text, .aboriginal-text, .usa-text {
+.support-local-text,
+.aboriginal-text,
+.usa-text {
   line-height: 2;
   font-size: 1.1em;
 }
@@ -826,7 +832,12 @@ button.callout-btn:hover {
 
 .aboriginal {
   height: 535px;
-  background: -webkit-radial-gradient(left top , circle cover , #ff9700 , #ff7f00 100%);
+  background: -webkit-radial-gradient(
+    left top,
+    circle cover,
+    #ff9700,
+    #ff7f00 100%
+  );
   color: #fff;
 }
 
@@ -869,7 +880,7 @@ button.callout-btn:hover {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  opacity: .3;
+  opacity: 0.3;
   z-index: 2;
 }
 
@@ -890,9 +901,6 @@ button.callout-btn:hover {
   font-weight: 500;
   line-height: 1.1;
 }
-
-
-
 
 /* Blogs and recipes  */
 
@@ -929,7 +937,6 @@ button.callout-btn:hover {
   margin: 4px;
   padding: 6px 8px;
 }
-
 
 .pill-item {
   background-color: #4884c2;
@@ -1387,7 +1394,8 @@ select:focus {
     margin-top: 20px;
   }
 
-  .support-community-wrapper, .aboriginal-wrapper {
+  .support-community-wrapper,
+  .aboriginal-wrapper {
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -1433,6 +1441,14 @@ select:focus {
 
   .vibe-van {
     width: 64%;
+  }
+
+  .aboriginal {
+    height: unset;
+  }
+
+  .support-farmers {
+    height: unset;
   }
 }
 
