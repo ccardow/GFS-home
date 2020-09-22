@@ -753,19 +753,28 @@
 
 </script>
       
-  <script>
+  <!-- <script>
     $(document).ready(function(){
       $( ".expanded-delivery-locations-toggle" ).hide();
       
       $( ".collapsed-delivery-locations-toggle" ).click(function() {
-        
-      $( ".expanded-delivery-locations-toggle" ).slideToggle( "slow", function() {
+        $( ".expanded-delivery-locations-toggle" ).slideToggle( "slow", function() {
         });
 });
     });
-
+    </script> -->
     
-    </script>
+    <script>
+      $(document).ready(function(){
+        $( ".expanded-delivery-locations-toggle" ).hide();
+        $(".collapsed-delivery-locations-toggle").click(function(){
+          $(".expanded-delivery-locations-toggle").slideDown();
+        });
+        $(".expanded-delivery-locations-toggle").click(function(){
+          $(".expanded-delivery-locations-toggle").slideUp();
+        });
+      });
+      </script>
     
 
     </div>
