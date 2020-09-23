@@ -1463,9 +1463,22 @@ select:focus {
   }
 }
 
+
+
 @media only screen and (min-width: 540px) {
-  .expanded-delivery-locations-toggle, .collapsed-delivery-locations-toggle, button.fixed-CTA {
+  .expanded-delivery-locations-toggle, .collapsed-delivery-locations-toggle {
     display: none;
+  }
+  
+  button.fixed-CTA {
+    padding: 16px 24px;
+  }
+  
+  button.fixed-CTA a {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    
   }
 }
 
