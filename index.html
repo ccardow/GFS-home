@@ -123,7 +123,12 @@
   </div>
   
   
+ <!-- Shop Now Fixed Button  -->
  
+ <button class="fixed-CTA hide-me">
+   <a href="#">SHOP NOW</a>
+   
+ </button>
   
   
 
@@ -159,6 +164,7 @@
     
     </div>
 
+    
     
     <div class="home-hero-img-container">
       <div class="container pos-z-index">
@@ -774,6 +780,17 @@
           $(".expanded-delivery-locations-toggle").slideUp();
         });
       });
+      </script>
+      
+      <script>
+        $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 600) {
+      $('.fixed-CTA').fadeIn();
+      } else {
+      $('.fixed-CTA').fadeOut();
+  }
+});
       </script>
     
 

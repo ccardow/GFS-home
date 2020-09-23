@@ -27,6 +27,34 @@ html {
   background-color: #4884c2;
 }
 
+/* FIXED CTA BUTTON */
+
+button.fixed-CTA {
+  position: fixed;
+  bottom: 0;
+  left: 2px;
+  z-index: 12;
+  border: none;
+  background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
+  padding: 12px;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 4px rgba(0,0,0,.2);
+  
+}
+
+button.fixed-CTA a {
+color: #fff;
+}
+
+.hide-me {
+  display: none;
+}
+
+.show-me {
+  display: block;
+}
+
+
 /* DROPDOWN TOGGLE FOR MOBILE  */
 
 .collapsed-delivery-locations-toggle {
@@ -42,7 +70,7 @@ html {
   top: 50px;
   width: 100%;
   z-index: 11;
-  box-shadow: 0 6px 6px rgba(0,0,0,.4);
+  box-shadow: 0 8px 8px rgba(0,0,0,.4);
 }
 
 .expanded-delivery-locations-toggle p {
@@ -1436,7 +1464,7 @@ select:focus {
 }
 
 @media only screen and (min-width: 540px) {
-  .expanded-delivery-locations-toggle, .collapsed-delivery-locations-toggle {
+  .expanded-delivery-locations-toggle, .collapsed-delivery-locations-toggle, button.fixed-CTA {
     display: none;
   }
 }
