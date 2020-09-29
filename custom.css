@@ -54,6 +54,43 @@ color: #fff;
   display: block;
 }
 
+.modal-button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-button-ghost {
+  
+    background-color: transparent;
+    border-radius: 4px;
+    border: solid 1px #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    max-width: 340px;
+    min-height: 60px;
+    min-width: 200px;
+    overflow: hidden;
+    padding: 10px 30px;
+    text-align: center;
+    line-height: 1.36;
+    letter-spacing: 4.2px;
+    color: #ffffff;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-position: center;
+    transition: background 0.8s;
+  
+}
+
 
 /* DROPDOWN TOGGLE FOR MOBILE  */
 
@@ -67,7 +104,7 @@ color: #fff;
   border-radius: 0 0 30px 30px;
   background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
   position: fixed;
-  top: 50px;
+  top: 64px;
   width: 100%;
   z-index: 11;
   box-shadow: 0 8px 8px rgba(0,0,0,.4);
@@ -93,11 +130,13 @@ color: #fff;
   z-index: 11;
   box-shadow: 0 6px 6px rgba(0,0,0,.4);
   padding-top: 20px;
+  overflow: auto;
 
 }
 
 .expanded-delivery-locations-container {
   width: 80%;
+  padding-top: 20px;
 }
 
 .expanded-delivery-locations-container p {

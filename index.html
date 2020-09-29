@@ -148,17 +148,36 @@
       
       <div class="expanded-delivery-locations-container">
         
-     
       <p>
         Free delivery on all orders. Orders placed by 12:00 PM are available for next delivery day Mon-Sat. </p>
         
         <p>We deliver in these locations:</p> 
         
         <ul>
-          <li>Abbotsford</li> <li>Aldergrove</li> <li>Burnaby</li> <li>Chilliwack</li> <li>Coquitlam</li> <li>Delta</li> <li>Fort Langley</li> <li>Langley</li> <li>Maple Ridge</li> <li>Mission</li> <li>Pitt Meadows</li> <li>Surrey</li> <li>White Rock</li> <li> Port Coquitlam</li> <li>Port Moody</li> <li>New Westminster</li>
+          <li>Abbotsford</li> 
+          <li>Aldergrove</li> 
+          <li>Burnaby</li> 
+          <li>Chilliwack</li> 
+          <li>Coquitlam</li> 
+          <li>Delta</li> 
+          <li>Fort Langley</li> 
+          <li>Langley</li> 
+          <li>Maple Ridge</li> 
+          <li>Mission</li> 
+          <li>Pitt Meadows</li> 
+          <li>Surrey</li> 
+          <li>White Rock</li> 
+          <li> Port Coquitlam</li> 
+          <li>Port Moody</li> 
+          <li>New Westminster</li>
         </ul>
+     
+      <p class="modal-button-wrapper">
+        <button class="modal-button-ghost">
+          OK, I got it!
+        </button>
       </p>
-      
+
     </div>
     
     
@@ -790,6 +809,14 @@
       } else {
       $('.fixed-CTA').fadeOut();
   }
+});
+      </script>
+      
+      <script language="javascript" type="text/javascript">
+        $(document).ready(function(){
+  $(".modal-button-ghost").click(function(){
+    $(".collapsed-delivery-locations-toggle").fadeOut();
+  });
 });
       </script>
     
