@@ -104,7 +104,7 @@ color: #fff;
   border-radius: 0 0 30px 30px;
   background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
   position: fixed;
-  top: 64px;
+  top: 50px;
   width: 100%;
   z-index: 11;
   box-shadow: 0 8px 8px rgba(0,0,0,.4);
