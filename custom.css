@@ -117,7 +117,6 @@ color: #fff;
 }
 
 .expanded-delivery-locations-toggle {
-  height: 85vh;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -130,6 +129,7 @@ color: #fff;
   z-index: 11;
   box-shadow: 0 6px 6px rgba(0,0,0,.4);
   padding-top: 20px;
+  padding-bottom: 30px;
   overflow: auto;
 
 }
