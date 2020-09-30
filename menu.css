@@ -81,9 +81,19 @@
 
 .tab-content {
   position: absolute;
-  top: 34px;
+  top: 43px;
   z-index: 5;
   width: 100%;
+}
+
+.tab-content UL > li > a {
+  color: #222;
+}
+
+.tab-content UL > li > a:hover {
+  color: #000000;
+  font-weight: 500;
+  border-bottom: 1px solid #ff9700;
 }
 
 .hide-me {
@@ -97,8 +107,14 @@
 .all {
   padding-bottom: 24px;
 }
+
 .all a {
-  color: #ff9700;
+  color: #000000;
+  font-weight: 500;
+}
+
+.all a:hover {
+  border-bottom: 1px solid #ff9700;
 }
 
 .tab-content UL > li {
@@ -120,6 +136,10 @@
   .hide-mobile-p {
     padding: 0;
     margin: 0;
+  }
+  
+  .tab-content {
+    top: 44px;
   }
 
   /* Scrollbar */
