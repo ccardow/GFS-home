@@ -17,7 +17,7 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" /> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -129,7 +129,87 @@
    <a href="#">SHOP NOW</a>
    
  </button>
+ 
+ <!-- LOCATION MODAL  COMMENT TO HIDE OR SHOW  -->
+ 
+   <!--  LOCATION Modal -->
+   
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-header-container">
+          
+          <h2 class="modal-header-welcome">Welcome to <br>DirectFood.Store</h2>
+          <p class="modal-body-text">Pick Your Nearest <br> City/Area</p>
+        </div>
+        <div class="modal-body-btn-group">
+          
+          <div class="row flex">
+                      
+          <div class="col-xs-12 col-md-6 btn-group-col">
+            <a href="#"><button class="modal-button-ghost welcome-modal">VANCOUVER,BC</button></a>
+          </div>
+          <div class="col-xs-12 col-md-6 btn-group-col">
+            <a href="#"><button class="modal-button-ghost welcome-modal">VICTORIA, BC</button></a>
+          </div>
+          <div class="col-xs-12 col-md-6 btn-group-col">
+            <a href="#"><button class="modal-button-ghost welcome-modal">PORTLAND, OR</button></a>
+          </div>
+          <div class="col-xs-12 col-md-6 btn-group-col">
+            <a href="#"><button class="modal-button-ghost welcome-modal">CHARLESTON, SC</button></a>
+           
+          </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <p class="modal-footer-text"><a href="#">Sign In</a> or <a href="a">Sign Up</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
   
+  
+     <!-- SUBSCRIBE Modal -->
+     <!-- <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog"> -->
+      
+        <!-- Modal content-->
+        <!-- <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-header-sub-container">
+            
+            <h2 class="modal-header-sub-welcome">Welcome to <br>DirectFood.Store</h2>
+            <p class="modal-body-text subscribe-text">Thank you for visiting us! We continue to load our website with fresh products from local farmers. For updates on new products, recipes, and deals, subscribe to our newsletter.</p>
+          </div>
+          <div class="modal-body-btn-group">
+            
+            <div class="row flex">
+              <div class="newsletter-wrapper">
+
+    
+                <div class="subscribe clearfix">
+                  <form id="send-newsletter" action="/Newsletter" method="post">
+                    <input type="text" name="email" placeholder="johndoe@email.com" />
+                    <button class="submit-btn-2 btn-hover-2" type="submit">
+                      subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+
+        </div>
+        
+      </div>
+    </div> -->
   
 
   <!-- HERO SECTION -->
@@ -861,6 +941,12 @@
       }
     }
       </script>
+      
+        <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
     
 
     </div>
