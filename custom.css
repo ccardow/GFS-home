@@ -27,6 +27,11 @@ html {
   background-color: #4884c2;
 }
 
+.container-fluid.category-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* FIXED CTA BUTTON */
 
 button.fixed-CTA {
@@ -91,6 +96,39 @@ color: #fff;
   
 }
 
+/* Category Tabs Fade-in Fade-out on horizontal scroll  */
+
+.category-tabs-wrap {
+  position: relative;
+}
+.category-tabs-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3rem;
+  background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+  transition: all linear 0.3s;
+}
+.category-tabs-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3rem;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  transition: all linear 0.3s;
+}
+.category-tabs-wrap.scrolled-right::after {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+.category-tabs-wrap.scrolled-left::before {
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+  z-index: 10;
+}
+
 
 /* DROPDOWN TOGGLE FOR MOBILE  */
 
@@ -104,7 +142,7 @@ color: #fff;
   border-radius: 0 0 30px 30px;
   background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
   position: fixed;
-  top: 50px;
+  top: 42px;
   width: 100%;
   z-index: 11;
   box-shadow: 0 8px 8px rgba(0,0,0,.4);
@@ -117,6 +155,7 @@ color: #fff;
 }
 
 .expanded-delivery-locations-toggle {
+  height: 100%;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -124,7 +163,7 @@ color: #fff;
   border-radius: 0 0 30px 30px;
   background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
   position: fixed;
-  top: 50px;
+  top: 42px;
   width: 100%;
   z-index: 11;
   box-shadow: 0 6px 6px rgba(0,0,0,.4);

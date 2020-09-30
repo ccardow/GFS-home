@@ -35,7 +35,7 @@
     <div class="container hide-mobile-p">
       <div class="col-12">
         <div class="tabbable">
-          <ul class="nav nav-tabs justify-content-center">
+          <ul class="nav nav-tabs justify-content-center category-tabs">
             <li>
               <a class="trigger" data-target="#tab1" data-toggle="tab" role="button">Condiments</a>
             </li>
@@ -818,6 +818,48 @@
     $(".collapsed-delivery-locations-toggle").fadeOut();
   });
 });
+      </script>
+      
+      <script>
+        $(function() {
+    /* For each horizontal scroll container, add a wrapper & set it's shadows */
+    $(".category-tabs").each(function() {
+      $(this).wrap('<div class="category-tabs-wrap"></div>');
+      setContainerScroll($(this));
+    });
+    
+    /* Set shadows when window is resized */
+    $(window).on("resize", function() {
+      $(".category-tabs").each(function() {	
+        setContainerScroll($(this));
+      });
+    });
+  
+  
+    $(".category-tabs").on("scroll", function() {	
+      setContainerScroll($(this));
+  
+    });
+  });
+  
+  function setContainerScroll($container) {
+      var $this = $container,
+        scrollLeft = $this.scrollLeft(),
+        maxScrollWidth = $this.innerWidth(),
+        maxScrollAmt = $this.find("ul").prop('scrollWidth') - maxScrollWidth;
+  
+      if (scrollLeft >= maxScrollAmt) {
+        $this.closest(".category-tabs-wrap").addClass("scrolled-right");
+      } else {
+        $this.closest(".category-tabs-wrap").removeClass("scrolled-right");
+      }
+  
+      if (scrollLeft > 0) {
+        $this.closest(".category-tabs-wrap").addClass("scrolled-left");
+      } else {
+        $this.closest(".category-tabs-wrap").removeClass("scrolled-left");
+      }
+    }
       </script>
     
 

@@ -48,10 +48,22 @@
 
 .tab-pane.active {
   background-color: white;
-
   padding: 30px 90px 30px 30px;
-  max-width: 320px;
+  max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav.nav-tabs.justify-content-center.category-tabs {
+  padding: 4px;
+  /*! margin: 9px; */
+  overflow-y: hidden;
+  font-size: 12px;
+  
+}
+
+.trigger {
+  padding: 8px !important;;
 }
 
 .nav > li > a:focus,
@@ -69,7 +81,7 @@
 
 .tab-content {
   position: absolute;
-  top: 50px;
+  top: 34px;
   z-index: 5;
   width: 100%;
 }
@@ -114,6 +126,7 @@
 
   ::-webkit-scrollbar {
     height: 2px;
+  
   }
 
   /* Track */
