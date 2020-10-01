@@ -31,7 +31,26 @@ html {
   padding-left: 0;
   padding-right: 0;
   position: relative;
-  top: 50px;
+  top: 0;
+}
+
+
+/* LOCATION MARKER  */
+
+.location-marker {
+  position: absolute;
+  right: 15px;
+  color: #222;
+  top: 10px;
+}
+
+.location-marker span {
+  padding-right: 4px;
+font-size: 12px;
+}
+
+.location-marker img {
+  width: 12px;
 }
 
 /* PICK LOCATION MODAL  */
@@ -1663,6 +1682,11 @@ select:focus {
   .jumbotron.home-hero {
     margin-bottom: 0;
   }
+  
+  .container-fluid.category-container {
+    top: 50px;
+    position: relative;
+  }
 
   .container-fluid.featured-section {
     margin-top: 0;
@@ -1772,6 +1796,10 @@ select:focus {
 
 .btn-group-col {
   width: 80%;
+}
+
+.location-marker {
+  display: none;
 }
 }
 
