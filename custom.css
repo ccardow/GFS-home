@@ -1480,6 +1480,10 @@ select:focus {
     font-size: 40px;
   }
   
+  .location-marker {
+    right: 70px;
+  }
+  
   .location-text, .caret.location-caret {
     display: none;
   }
