@@ -1479,6 +1479,11 @@ select:focus {
     padding: 15%;
     font-size: 40px;
   }
+  
+  .location-text, .caret.location-caret {
+    display: none;
+  }
+  
 }
 
 /* @media only screen and (max-width: 990px) {
