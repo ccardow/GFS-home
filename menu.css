@@ -48,7 +48,6 @@
 
 .tab-pane.active {
   background-color: white;
-  padding: 30px 90px 30px 30px;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -81,19 +80,45 @@
 
 .tab-content {
   position: absolute;
-  top: 43px;
+  top: 42px;
   z-index: 5;
   width: 100%;
 }
 
 .tab-content UL > li > a {
   color: #222;
+  text-decoration: none;
+  padding-bottom: 2px;
+  position: relative;
+  white-space: nowrap;
 }
 
 .tab-content UL > li > a:hover {
   color: #000000;
   font-weight: 500;
-  border-bottom: 1px solid #ff9700;
+}
+
+.tab-content UL > li {
+  padding-bottom: 16px;
+  list-style: none;
+  padding-right: 30px;
+}
+
+
+.tab-content UL > li > a::after, .all a::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  background: #FF7F00;
+  transition: .5s ease-in-out;
+}
+
+.tab-content UL > li > a:hover::after, .all a:hover::after {
+  width: 100%;
+  text-decoration: none;
 }
 
 .hide-me {
@@ -105,22 +130,50 @@
 }
 
 .all {
-  padding-bottom: 24px;
+  padding: 20px 20px 16px 40px; 
+  white-space: nowrap;
 }
 
 .all a {
   color: #000000;
   font-weight: 500;
+  position: relative;
 }
 
 .all a:hover {
-  border-bottom: 1px solid #ff9700;
+  text-decoration: none;
 }
 
-.tab-content UL > li {
-  padding-bottom: 24px;
-  list-style: none;
+
+.menu-content-wrapper {
+  display: flex;
+  width: 100%;
 }
+
+.menu-content-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+  border-right: 1px solid #eee;
+  background-color: #f7f7f7;
+}
+
+.menu-content-right {
+  padding: 60px 60px 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.menu-content-right img {
+  justify-content: center;
+  width: 100%;
+  opacity: .4;
+}
+
+
+
 
 @media only screen and (max-width: 540px) {
   .nav-tabs {
