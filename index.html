@@ -153,12 +153,12 @@
  
    <!--  LOCATION Modal -->
    
-   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+   <!-- <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog"> -->
     
       <!-- Modal content-->
       
-      <div class="modal-content">
+      <!-- <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <div class="modal-header-container">
           
@@ -191,7 +191,7 @@
       </div>
       
     </div>
-  </div>
+  </div> -->
   
   
      <!-- SUBSCRIBE Modal -->
@@ -480,10 +480,10 @@
 
   <div class="container-fluid so-easy-section">
     <div class="row so-easy-row">
-      <div class="wow animated slideInLeft col-xs-6 col-md-3 easy-boxes so-fast">
+      <div class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fast">
         <p class="icon-so-easy">SO FAST!</p>
         <p>
-          <i class="wow bounceInLeft fas fa-shipping-fast" data-wow-delay="0.3s"></i>
+          <i id="animated-van" class="animate__delay-2s  fas fa-shipping-fast"></i>
         </p>
         <div class="so-easy-rollover">
           <p class="so-easy-rollover-content">
@@ -491,7 +491,7 @@
           </p>
         </div>
       </div>
-      <div class="wow animated slideInLeft col-xs-6 col-md-3 easy-boxes so-fresh">
+      <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fresh">
         <p class="icon-so-easy">SO FRESH!</p>
         <p><i class="fas fa-leaf"></i></p>
         <div class="so-easy-rollover">
@@ -500,7 +500,7 @@
           </p>
         </div>
       </div>
-      <div class="wow animated slideInRight col-xs-6 col-md-3 easy-boxes so-easy">
+      <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-right so-easy">
         <p class="icon-so-easy">SO EASY!</p>
         <p><i class="fab fa-simplybuilt"></i></p>
         <div class="so-easy-rollover">
@@ -509,7 +509,7 @@
           </p>
         </div>
       </div>
-      <div class="wow animated slideInRight col-xs-6 col-md-3 easy-boxes eat-chill">
+      <div class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-right eat-chill">
         <p class="icon-so-easy">EAT & CHILL</p>
         <p><i class="fas fa-utensils"></i></p>
         <div class="so-easy-rollover">
@@ -907,8 +907,21 @@
       $('.fixed-CTA').fadeIn();
       } else {
       $('.fixed-CTA').fadeOut();
-  }
-});
+      }
+      });
+      </script>
+      
+      <script>
+                $(document).scroll(function() {
+      var b = $(this).scrollTop();
+      if (b > 2700) {
+      $(".easy-boxes").addClass("animate__animated");
+      $(".easy-boxes-left").addClass("animate__slideInLeft");
+      $(".easy-boxes-right").addClass("animate__slideInRight");
+      $("#animated-van").addClass("animate__animated"); 
+      $("#animated-van").addClass("animate__bounceInLeft");
+      } 
+       });
       </script>
       
       <script language="javascript" type="text/javascript">
