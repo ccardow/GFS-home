@@ -1,267 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirectFood.Store Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DirectFood.Store Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.typekit.net/kun4hds.css" />
 
-  <link rel="stylesheet" href="https://use.typekit.net/kun4hds.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" /> -->
 
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://awesomecdn.netlify.app/bs.js"></script>
 
-  <script src="https://awesomecdn.netlify.app/bs.js"></script>
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
 
-  <link rel="stylesheet" href="custom.css" />
-  <link rel="stylesheet" href="menu.css" />
-</head>
+  <body>
+    <div class="container-fluid global-bg-color-bg">
+      <div class="container-fluid category-container">
+        <div class="container hide-mobile-p">
+          <div class="col-12">
+            <div class="tabbable">
+              <ul class="nav nav-tabs justify-content-center category-tabs">
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab1"
+                    data-toggle="tab"
+                    role="button"
+                    >Condiments</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab2"
+                    data-toggle="tab"
+                    role="button"
+                    >Fruit</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab3"
+                    data-toggle="tab"
+                    role="button"
+                    >Grocery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab4"
+                    data-toggle="tab"
+                    role="button"
+                    >Meat & Dairy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab5"
+                    data-toggle="tab"
+                    role="button"
+                    >Miscellaneous</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab6"
+                    data-toggle="tab"
+                    role="button"
+                    >Pantry</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="trigger"
+                    data-target="#tab7"
+                    data-toggle="tab"
+                    role="button"
+                    >Vegetables</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="tab-content">
+                <div class="tab-pane collapse" id="tab1">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Condiments</a></p>
+                      <ul>
+                        <li><a href="#">Jam</a></li>
+                        <li><a href="#">Oil</a></li>
+                        <li><a href="#">Spices</a></li>
+                        <li><a href="#">Vinegar</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-condiments.svg" />
+                    </div>
+                  </div>
+                </div>
 
-<body>
-  <div class="container-fluid global-bg-color-bg">
-    
+                <div class="tab-pane collapse" id="tab2">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Fruit</a></p>
+                      <ul>
+                        <li><a href="#">Blueberries</a></li>
+                        <li><a href="#">Peaches</a></li>
+                        <li><a href="#">Smoothies</a></li>
+                        <li><a href="#">Strawberries</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-fruit.svg" />
+                    </div>
+                  </div>
+                </div>
 
-  <div class="container-fluid category-container">
-    <div class="container hide-mobile-p">
-      <div class="col-12">
-        <div class="tabbable">
-          <ul class="nav nav-tabs justify-content-center category-tabs">
-            <li>
-              <a class="trigger" data-target="#tab1" data-toggle="tab" role="button">Condiments</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab2" data-toggle="tab" role="button">Fruit</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab3" data-toggle="tab" role="button">Grocery</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab4" data-toggle="tab" role="button">Meat & Dairy</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab5" data-toggle="tab" role="button">Miscellaneous</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab6" data-toggle="tab" role="button">Pantry</a>
-            </li>
-            <li>
-              <a class="trigger" data-target="#tab7" data-toggle="tab" role="button">Vegetables</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="tab-content">
-            
-            <div class="tab-pane collapse" id="tab1">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#">All Condiments</a></p>
-                  <ul>
-                    <li><a href="#">Jam</a></li>
-                    <li><a href="#">Oil</a></li>
-                    <li><a href="#">Spices</a></li>
-                    <li><a href="#">Vinegar</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-condiments.svg">
+                <div class="tab-pane collapse" id="tab3">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Grocery</a></p>
+                      <ul>
+                        <li><a href="#">Rice</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-grocery.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane collapse" id="tab4">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Meat & Dairy</a></p>
+                      <ul>
+                        <li><a href="#">Beef</a></li>
+                        <li><a href="#">Eggs</a></li>
+                        <li><a href="#">Milk</a></li>
+                        <li><a href="#">Pork</a></li>
+                        <li><a href="#">Yogurt</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-meat-dairy.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane collapse" id="tab5">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#"> All Miscellaneous</a></p>
+                      <ul>
+                        <li><a href="#">Honey</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-misc.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane collapse" id="tab6">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Pantry</a></p>
+                      <ul>
+                        <li><a href="#">Tea</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-pantry.svg" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane collapse" id="tab7">
+                  <div class="menu-content-wrapper">
+                    <div class="menu-content-left">
+                      <p class="all"><a href="#">All Vegetables</a></p>
+                      <ul>
+                        <li><a href="#">Asparagus</a></li>
+                        <li><a href="#">Beets</a></li>
+                        <li><a href="#">Garlic(Fresh)</a></li>
+                        <li><a href="#">Gobo Burdock</a></li>
+                        <li><a href="#">Microgreens</a></li>
+                        <li><a href="#">Mushrooms</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu-content-right">
+                      <img src="assets/menu-veggies.svg" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            
-            <div class="tab-pane collapse" id="tab2">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#">All Fruit</a></p>
-                  <ul>
-                    <li><a href="#">Blueberries</a></li>
-                    <li><a href="#">Peaches</a></li>
-                    <li><a href="#">Smoothies</a></li>
-                    <li><a href="#">Strawberries</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-fruit.svg">
-                </div>
-              </div>
-            </div>
-            
-            <div class="tab-pane collapse" id="tab3">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#">All Grocery</a></p>
-                  <ul>
-                    <li><a href="#">Rice</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-grocery.svg">
-                </div>
-              </div>
-            </div>
-            
-            
-            <div class="tab-pane collapse" id="tab4">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#">All Meat & Dairy</a></p>
-                  <ul>
-                    <li><a href="#">Beef</a></li>
-                    <li><a href="#">Eggs</a></li>
-                    <li><a href="#">Milk</a></li>
-                    <li><a href="#">Pork</a></li>
-                    <li><a href="#">Yogurt</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-meat-dairy.svg">
-                </div>
-              </div>
-            </div>
-            
-            
-            
-            <div class="tab-pane collapse" id="tab5">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#"> All Miscellaneous</a></p>
-                  <ul>
-                    <li><a href="#">Honey</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-misc.svg">
-                </div>
-              </div>
-            </div>
-            
-            <div class="tab-pane collapse" id="tab6">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-                  <p class="all"><a href="#">All Pantry</a></p>
-                  <ul>
-                    <li><a href="#">Tea</a></li>
-                  </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-pantry.svg">
-                </div>
-              </div>
-            </div>
-          
-            
-            <div class="tab-pane collapse" id="tab7">
-              <div class="menu-content-wrapper">
-                <div class="menu-content-left">
-              <p class="all"><a href="#">All Vegetables</a></p>
-                <ul>
-                    <li><a href="#">Asparagus</a></li>
-                    <li><a href="#">Beets</a></li>
-                    <li><a href="#">Garlic(Fresh)</a></li>
-                    <li><a href="#">Gobo Burdock</a></li>
-                    <li><a href="#">Microgreens</a></li>
-                     <li><a href="#">Mushrooms</a></li>
-                     </ul>
-                        </div>
-                <div class="menu-content-right">
-                  <img src="assets/menu-veggies.svg">
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
 
+        <div class="location-marker">
+          <div class="dropdown">
+            <button
+              class="btn btn-default dropdown-toggle"
+              type="button"
+              id="dropdownMenu1"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <img src="assets/location-icon.svg" alt="Location" />
+              <span class="location-text">Vancouver, BC</span>
+              <span class="caret location-caret"></span>
+            </button>
+            <ul
+              class="dropdown-menu"
+              id="custom-dropdown"
+              aria-labelledby="dropdownMenu1"
+            >
+              <li><a href="#">Vancouver, BC</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Victoria, BC</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Portland, OR</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Charleston, SC</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="location-marker">
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <img src="assets/location-icon.svg" alt="Location">
-         <span class="location-text">Vancouver, BC</span>
-          <span class="caret location-caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="custom-dropdown" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Vancouver, BC</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Victoria, BC</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Portland, OR</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Charleston, SC</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
- <!-- Shop Now Fixed Button  -->
- 
- <button class="fixed-CTA hide-me">
-   <a href="#">SHOP NOW</a>
-   
- </button>
- 
- <!-- LOCATION MODAL  COMMENT TO HIDE OR SHOW  -->
- 
-   <!--  LOCATION Modal -->
-   
-   <!-- <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog"> -->
-    
-      <!-- Modal content-->
-      
-      <!-- <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <div class="modal-header-container">
-          
-          <h2 class="modal-header-welcome">Welcome to <br>DirectFood.Store</h2>
-          <p class="modal-body-text">Pick Your Nearest <br> City/Area</p>
-        </div>
-        <div class="modal-body-btn-group">
-          
-          <div class="row flex">
-                      
-          <div class="col-xs-12 col-md-6 btn-group-col">
-            <a href="#"><button class="modal-button-ghost welcome-modal">VANCOUVER,BC</button></a>
-          </div>
-          <div class="col-xs-12 col-md-6 btn-group-col">
-            <a href="#"><button class="modal-button-ghost welcome-modal">VICTORIA, BC</button></a>
-          </div>
-          <div class="col-xs-12 col-md-6 btn-group-col">
-            <a href="#"><button class="modal-button-ghost welcome-modal">PORTLAND, OR</button></a>
-          </div>
-          <div class="col-xs-12 col-md-6 btn-group-col">
-            <a href="#"><button class="modal-button-ghost welcome-modal">CHARLESTON, SC</button></a>
-           
-          </div>
-          </div>
 
-        </div>
-        <div class="modal-footer">
-          <p class="modal-footer-text"><a href="#">Sign In</a> or <a href="a">Sign Up</a></p>
+      <!-- Shop Now Fixed Button  -->
+
+      <button class="fixed-CTA hide-me">
+        <a href="#">SHOP NOW</a>
+      </button>
+
+      <!-- LOCATION MODAL  COMMENT TO HIDE OR SHOW  -->
+
+      <!--  LOCATION Modal -->
+
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <div class="modal-header-container">
+              <h2 class="modal-header-welcome">
+                Welcome to <br />DirectFood.Store
+              </h2>
+              <p class="modal-body-text">
+                Pick Your Nearest <br />
+                City/Area
+              </p>
+            </div>
+            <div class="modal-body-btn-group">
+              <div class="row flex">
+                <div class="col-xs-12 col-md-6 btn-group-col">
+                  <a href="#"
+                    ><button class="modal-button-ghost welcome-modal">
+                      VANCOUVER,BC
+                    </button></a
+                  >
+                </div>
+                <div class="col-xs-12 col-md-6 btn-group-col">
+                  <a href="#"
+                    ><button class="modal-button-ghost welcome-modal">
+                      VICTORIA, BC
+                    </button></a
+                  >
+                </div>
+                <div class="col-xs-12 col-md-6 btn-group-col">
+                  <a href="#"
+                    ><button class="modal-button-ghost welcome-modal">
+                      PORTLAND, OR
+                    </button></a
+                  >
+                </div>
+                <div class="col-xs-12 col-md-6 btn-group-col">
+                  <a href="#"
+                    ><button class="modal-button-ghost welcome-modal">
+                      CHARLESTON, SC
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <p class="modal-footer-text">
+                <a href="#">Sign In</a> or <a href="a">Sign Up</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      
-    </div>
-  </div> -->
-  
-  <!-- SUBSCRIBE MODAL  COMMENT TO HIDE OR SHOW  -->
-  
-     <!-- SUBSCRIBE Modal -->
-     <!-- <div class="modal fade" id="myModal" role="dialog">
+
+      <!-- SUBSCRIBE MODAL  COMMENT TO HIDE OR SHOW  -->
+
+      <!-- SUBSCRIBE Modal -->
+      <!-- <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog"> -->
-      
-        <!-- Modal content-->
-        <!-- <div class="modal-content">
+
+      <!-- Modal content-->
+      <!-- <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <div class="modal-header-sub-container">
             
@@ -291,15 +363,15 @@
         
       </div>
     </div> -->
-    
-    <!-- SUBSCRIBE MODAL FOR NO STORE YET  COMMENT TO HIDE OR SHOW  -->
-    
-        <!-- SUBSCRIBE Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-          <div class="modal-dialog">
-          
-            <!-- Modal content-->
-            <div class="modal-content">
+
+      <!-- SUBSCRIBE MODAL FOR NO STORE YET  COMMENT TO HIDE OR SHOW  -->
+
+      <!-- SUBSCRIBE Modal -->
+      <!-- <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog"> -->
+
+      <!-- Modal content-->
+      <!-- <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <div class="modal-header-sub-container">
                 
@@ -329,656 +401,760 @@
             </div>
             
           </div>
+        </div> -->
+
+      <!-- HERO SECTION -->
+
+      <div class="jumbotron home-hero">
+        <!-- Mobile Locations Toggle dropdown hide past 768px -->
+
+        <div class="collapsed-delivery-locations-toggle">
+          <p class="collapsed-toggle-find-out-more">
+            Free delivery. Find out more.
+          </p>
         </div>
-  
 
-  <!-- HERO SECTION -->
-
-  <div class="jumbotron home-hero">
-    
-    <!-- Mobile Locations Toggle dropdown hide past 768px -->
-    
-    <div class="collapsed-delivery-locations-toggle">
-      <p class="collapsed-toggle-find-out-more">
-        Free delivery. Find out more.
-      </p>
-    </div>
-    
-    <div class="expanded-delivery-locations-toggle">
-      
-      <div class="expanded-delivery-locations-container">
-        
-      <p>
-        Free delivery on all orders. Orders placed by 12:00 PM are available for next delivery day Mon-Sat. </p>
-        
-        <p>We deliver in these locations:</p> 
-        
-        <ul>
-          <li>Abbotsford</li> 
-          <li>Aldergrove</li> 
-          <li>Burnaby</li> 
-          <li>Chilliwack</li> 
-          <li>Coquitlam</li> 
-          <li>Delta</li> 
-          <li>Fort Langley</li> 
-          <li>Langley</li> 
-          <li>Maple Ridge</li> 
-          <li>Mission</li> 
-          <li>Pitt Meadows</li> 
-          <li>Surrey</li> 
-          <li>White Rock</li> 
-          <li> Port Coquitlam</li> 
-          <li>Port Moody</li> 
-          <li>New Westminster</li>
-        </ul>
-     
-      <p class="modal-button-wrapper">
-        <button class="modal-button-ghost">
-          OK, I got it!
-        </button>
-      </p>
-
-    </div>
-    
-    
-    </div>
-
-    
-    
-    <div class="home-hero-img-container">
-      <div class="container pos-z-index">
-        <div class="row home-hero-row">
-          <img src="assets/vibes-tinyfied.png" alt="" class="vibe-van animate__animated animate__bounceInRight img-responsive animate__slow" />
-          <div class="col-md-6 col-md-offset-1 headline-container order-1">
-            <h1 class="hero-headline">truly farm<br />to table</h1>
-            <p class="hero-subhead">
-              Fresh, Local & Organic Food Directly from Farmers
-            </p>
+        <div class="expanded-delivery-locations-toggle">
+          <div class="expanded-delivery-locations-container">
             <p>
-              <button class="hero-btn">Shop Now</button>
+              Free delivery on all orders. Orders placed by 12:00 PM are
+              available for next delivery day Mon-Sat.
+            </p>
+
+            <p>We deliver in these locations:</p>
+
+            <ul>
+              <li>Abbotsford</li>
+              <li>Aldergrove</li>
+              <li>Burnaby</li>
+              <li>Chilliwack</li>
+              <li>Coquitlam</li>
+              <li>Delta</li>
+              <li>Fort Langley</li>
+              <li>Langley</li>
+              <li>Maple Ridge</li>
+              <li>Mission</li>
+              <li>Pitt Meadows</li>
+              <li>Surrey</li>
+              <li>White Rock</li>
+              <li>Port Coquitlam</li>
+              <li>Port Moody</li>
+              <li>New Westminster</li>
+            </ul>
+
+            <p class="modal-button-wrapper">
+              <button class="modal-button-ghost">OK, I got it!</button>
             </p>
           </div>
-          <div class="col-lg-5 headline-container u-margin-top order-2"></div>
         </div>
-        <div class="row callout-row">
-          <div class="col col-md-10 col-md-offset-1 hero-callout order-3">
-            <div class="callout-content">
 
-              <p class="callout-headline">
-                <span>Not boxed or warehoused:</span> direct from local farms!
-              </p>
-              <p class="callout-text">
-                We inspire and empower our customers to eat healthy, buy local, and learn more about the farm-to-table concept. With no kits, warehouses, distributors, or stores involved, get exactly what you want in its freshest state delivered directly to your doorstep!
-              </p>
+        <div class="home-hero-img-container">
+          <div class="container pos-z-index">
+            <div class="row home-hero-row">
+              <img
+                src="assets/vibes-tinyfied.png"
+                alt=""
+                class="vibe-van animate__animated animate__bounceInRight img-responsive animate__slow"
+              />
+              <div class="col-md-6 col-md-offset-1 headline-container order-1">
+                <h1 class="hero-headline">truly farm<br />to table</h1>
+                <p class="hero-subhead">
+                  Fresh, Local & Organic Food Directly from Farmers
+                </p>
+                <p>
+                  <button class="hero-btn">Shop Now</button>
+                </p>
+              </div>
+              <div
+                class="col-lg-5 headline-container u-margin-top order-2"
+              ></div>
+            </div>
+            <div class="row callout-row">
+              <div class="col col-md-10 col-md-offset-1 hero-callout order-3">
+                <div class="callout-content">
+                  <p class="callout-headline">
+                    <span>Not boxed or warehoused:</span> direct from local
+                    farms!
+                  </p>
+                  <p class="callout-text">
+                    We inspire and empower our customers to eat healthy, buy
+                    local, and learn more about the farm-to-table concept. With
+                    no kits, warehouses, distributors, or stores involved, get
+                    exactly what you want in its freshest state delivered
+                    directly to your doorstep!
+                  </p>
 
-              <div class="row icon-row">
-                <div class="col col-xs-4 col-md-2 col-md-offset-1 natural-icons">
-                  <img src="assets/organic.svg" alt="Organic" />Organic
-                </div>
-                <div class="col col-xs-4 col-md-2 natural-icons">
-                  <img src="assets/shop.svg" alt="Locally Grown" />Locally
-                  Grown
-                </div>
-                <div class="col col-xs-4 col-md-2 natural-icons">
-                  <img src="assets/vegetable.svg" alt="Always Fresh" />Always
-                  Fresh
-                </div>
-                <div class="col col-xs-4 col-md-2 natural-icons">
-                  <img src="assets/ethical.svg" alt="Ethically Sourced" />Ethically Sourced
-                </div>
-                <div class="col col-xs-4 col-md-2 natural-icons">
-                  <img src="assets/box.svg" alt="Locally Grown" />Next Day
-                  Delivery
+                  <div class="row icon-row">
+                    <div
+                      class="col col-xs-4 col-md-2 col-md-offset-1 natural-icons"
+                    >
+                      <img src="assets/organic.svg" alt="Organic" />Organic
+                    </div>
+                    <div class="col col-xs-4 col-md-2 natural-icons">
+                      <img src="assets/shop.svg" alt="Locally Grown" />Locally
+                      Grown
+                    </div>
+                    <div class="col col-xs-4 col-md-2 natural-icons">
+                      <img
+                        src="assets/vegetable.svg"
+                        alt="Always Fresh"
+                      />Always Fresh
+                    </div>
+                    <div class="col col-xs-4 col-md-2 natural-icons">
+                      <img
+                        src="assets/ethical.svg"
+                        alt="Ethically Sourced"
+                      />Ethically Sourced
+                    </div>
+                    <div class="col col-xs-4 col-md-2 natural-icons">
+                      <img src="assets/box.svg" alt="Locally Grown" />Next Day
+                      Delivery
+                    </div>
+                  </div>
+
+                  <p class="u-margin-top-50">
+                    <button class="callout-btn">Find Out More</button>
+                  </p>
                 </div>
               </div>
-
-              <p class="u-margin-top-50">
-                <button class="callout-btn">Find Out More</button>
-              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- END HERO SECTION  -->
+      <!-- END HERO SECTION  -->
 
-  <!-- FEATURED PRODUCTS  -->
+      <!-- FEATURED PRODUCTS  -->
 
-  <div class="container-fluid featured-section">
-    <div class="container featured-content-container">
-      <p class="section-title-light">FEATURED PRODUCTS</p>
-      <div class="row featured-row">
-        <div class="img featured-product-1 lazy lazy-loaded">
-          <div class="featured-product-wrapper">
-            <p class="featured-product-name">
-              Rib, T-bone, Porterhouse. Choose your cut.
-            </p>
-            <div class="featured-product-seller hidden">
-              ACME Pure Oil Farms
-            </div>
-            <div class="featured-product-price hidden">$29.99</div>
-          </div>
-          <a class="featured-product-link" href="#">Shop Now</a>
-        </div>
-        <div class="featured-wrapper">
-          <div class="img featured-product-2 lazy lazy-loaded">
-            <div class="featured-product-wrapper">
-              <p class="featured-product-name">
-                Local Farm Fresh Blueberries.
-              </p>
-              <div class="featured-product-seller hidden">ACME Goat Farm</div>
-              <div class="featured-product-price hidden">$9.99</div>
-            </div>
-            <a class="featured-product-link" href="#">Shop Now</a>
-          </div>
-          <div class="img featured-product-3 lazy lazy-loaded">
-            <div class="featured-product-wrapper">
-              <p class="featured-product-name">Free Range & Organic Eggs</p>
-              <div class="featured-product-seller hidden">
-                Jack and Jill Farms
+      <div class="container-fluid featured-section">
+        <div class="container featured-content-container">
+          <p class="section-title-light">FEATURED PRODUCTS</p>
+          <div class="row featured-row">
+            <div class="img featured-product-1 lazy lazy-loaded">
+              <div class="featured-product-wrapper">
+                <p class="featured-product-name">
+                  Rib, T-bone, Porterhouse. Choose your cut.
+                </p>
+                <div class="featured-product-seller hidden">
+                  ACME Pure Oil Farms
+                </div>
+                <div class="featured-product-price hidden">$29.99</div>
               </div>
-              <div class="featured-product-price hidden">$19.99</div>
+              <a class="featured-product-link" href="#">Shop Now</a>
             </div>
-            <a class="featured-product-link" href="#">Shop Now</a>
+            <div class="featured-wrapper">
+              <div class="img featured-product-2 lazy lazy-loaded">
+                <div class="featured-product-wrapper">
+                  <p class="featured-product-name">
+                    Local Farm Fresh Blueberries.
+                  </p>
+                  <div class="featured-product-seller hidden">
+                    ACME Goat Farm
+                  </div>
+                  <div class="featured-product-price hidden">$9.99</div>
+                </div>
+                <a class="featured-product-link" href="#">Shop Now</a>
+              </div>
+              <div class="img featured-product-3 lazy lazy-loaded">
+                <div class="featured-product-wrapper">
+                  <p class="featured-product-name">Free Range & Organic Eggs</p>
+                  <div class="featured-product-seller hidden">
+                    Jack and Jill Farms
+                  </div>
+                  <div class="featured-product-price hidden">$19.99</div>
+                </div>
+                <a class="featured-product-link" href="#">Shop Now</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- END FEATURED PRODUCTS -->
+      <!-- END FEATURED PRODUCTS -->
 
-  <!-- PRODUCT CARDS -->
+      <!-- PRODUCT CARDS -->
 
-  <div class="container-fluid product-card-listing">
-    <p style="text-align: center">
-      ---Product listing cards go here as they exist on the site's store.
-      Limit of four on large desktops and one on mobile, but scroll should be
-      horizontal and not vertical ---
-    </p>
-  </div>
-
-  <!-- END PRODUCT CARDS -->
-
-  <!-- SHOP BY CATEGORY  -->
-
-  <div class="container-fluid shop-category">
-    <div class="container product-category-container">
-      <p class="section-title-dark">SHOP BY CATEGORY</p>
-      <div class="row category-row">
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30 category-wrapper">
-          <div class="category-img-wrapper fruits">
-            <a href="#"><img src="assets/fruits-bowl.png" alt="Fruit" /></a>
-          </div>
-          Fruits
-        </div>
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
-          <div class="category-img-wrapper meat">
-            <a href="#"><img src="assets/meat.png" alt="Meat" /></a>
-          </div>
-          Meat
-        </div>
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
-          <div class="category-img-wrapper vegetables">
-            <a href="#"><img src="assets/veggies.png" alt="Vegetables" /></a>
-          </div>
-          Vegetables
-        </div>
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
-          <div class="category-img-wrapper honey">
-            <a href="#"><img src="assets/honey.png" alt="Honey" /></a>
-          </div>
-          Honey
-        </div>
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
-          <div class="category-img-wrapper oil-spices">
-            <a href="#"><img src="assets/spices-oil.png" alt="Oil and Spices" /></a>
-          </div>
-          Oil & Spices
-        </div>
-        <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
-          <div class="category-img-wrapper tea">
-            <a href="#"><img src="assets/tea.png" alt="Tea" /></a>
-          </div>
-          Tea
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END SHOP BY CATEGORY  -->
-
-  <!-- FEATURED VIDEOS  -->
-
-  <div class="container-fluid featured-videos-section">
-    <div class="container featured-videos-container">
-      <p class="section-title-light">FEATURED SELLER STORIES</p>
-      <div class="row video-row">
-        <div class="col-md-4 video-item">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.youtube.com/embed/eMOmEGEjdx0" frameborder="0" allowfullscreen="true"></iframe>
-          </div>
-        </div>
-        <div class="col-md-4 video-item">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.youtube.com/embed/1Vshz4-SFQ0" frameborder="0" allowfullscreen="true"></iframe>
-          </div>
-        </div>
-        <div class="col-md-4 video-item">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.youtube.com/embed/Sq1YORqKhNA" frameborder="0" allowfullscreen="true"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END FEATURED VIDEOS  -->
-
-  <!-- SO EASY STEPS  -->
-
-  <div class="container-fluid so-easy-section">
-    <div class="row so-easy-row">
-      <div class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fast">
-        <p class="icon-so-easy">SO FAST!</p>
-        <p>
-          <i id="animated-van" class="animate__delay-2s  fas fa-shipping-fast"></i>
+      <div class="container-fluid product-card-listing">
+        <p style="text-align: center">
+          ---Product listing cards go here as they exist on the site's store.
+          Limit of four on large desktops and one on mobile, but scroll should
+          be horizontal and not vertical ---
         </p>
-        <div class="so-easy-rollover">
-          <p class="so-easy-rollover-content">
-            Quickly search for local farms in your area
-          </p>
-        </div>
       </div>
-      <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fresh">
-        <p class="icon-so-easy">SO FRESH!</p>
-        <p><i class="fas fa-leaf"></i></p>
-        <div class="so-easy-rollover">
-          <p class="so-easy-rollover-content">
-            Place your order for fresh & flavourful food
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-right so-easy">
-        <p class="icon-so-easy">SO EASY!</p>
-        <p><i class="fab fa-simplybuilt"></i></p>
-        <div class="so-easy-rollover">
-          <p class="so-easy-rollover-content">
-            Food is delivered to your door, no hassles
-          </p>
-        </div>
-      </div>
-      <div class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-right eat-chill">
-        <p class="icon-so-easy">EAT & CHILL</p>
-        <p><i class="fas fa-utensils"></i></p>
-        <div class="so-easy-rollover">
-          <p class="so-easy-rollover-content">
-            Pick your favourite farms & get regular deliveries
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- END SO EASY STEPS  -->
+      <!-- END PRODUCT CARDS -->
 
-  <!-- FARMS/SELLERS CAROUSEL  -->
+      <!-- SHOP BY CATEGORY  -->
 
-  <div class="container-fluid farms-listing-section">
-    <p class="section-title-dark">FARMS ON DIRECTFOODSTORE.COM</p>
-
-    <p style="text-align: center; padding-bottom: 200px">
-      ---Just pull this section in as is without the skewed style or grey
-      background color---
-    </p>
-  </div>
-
-  <!-- END FARMS/SELLERS CAROUSEL  -->
-
-  <!-- SUPPORT OUR FARMS AND DFS VIDEO  -->
-
-  <div class="container-fluid support-farmers-container">
-    <div class="row support-farmers-row">
-      <div class="col col-md-6 support-farmers">
-        <div class="support-community-wrapper">
-          <p class="support-local-header">SUPPORT OUR LOCAL COMMUNITY</p>
-          <p class="support-local-text">
-            DirectFood.store brings customers, farmers, and restaurants
-            together on one unique and easy-to-use platform. Get access to
-            fresh, local and organic products while supporting and becoming
-            part of a thriving local economy. Together, we can create an
-            online grocery shopping experience that builds communities,
-            promotes sustainable practices while sharing our stories and, most
-            importantly, supporting our local farmers and vendors.
-          </p>
+      <div class="container-fluid shop-category">
+        <div class="container product-category-container">
+          <p class="section-title-dark">SHOP BY CATEGORY</p>
+          <div class="row category-row">
+            <div
+              class="col-xs-6 col-md-2 text-center u-margin-bottom-30 category-wrapper"
+            >
+              <div class="category-img-wrapper fruits">
+                <a href="#"><img src="assets/fruits-bowl.png" alt="Fruit" /></a>
+              </div>
+              Fruits
+            </div>
+            <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
+              <div class="category-img-wrapper meat">
+                <a href="#"><img src="assets/meat.png" alt="Meat" /></a>
+              </div>
+              Meat
+            </div>
+            <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
+              <div class="category-img-wrapper vegetables">
+                <a href="#"
+                  ><img src="assets/veggies.png" alt="Vegetables"
+                /></a>
+              </div>
+              Vegetables
+            </div>
+            <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
+              <div class="category-img-wrapper honey">
+                <a href="#"><img src="assets/honey.png" alt="Honey" /></a>
+              </div>
+              Honey
+            </div>
+            <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
+              <div class="category-img-wrapper oil-spices">
+                <a href="#"
+                  ><img src="assets/spices-oil.png" alt="Oil and Spices"
+                /></a>
+              </div>
+              Oil & Spices
+            </div>
+            <div class="col-xs-6 col-md-2 text-center u-margin-bottom-30">
+              <div class="category-img-wrapper tea">
+                <a href="#"><img src="assets/tea.png" alt="Tea" /></a>
+              </div>
+              Tea
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="col col-md-6 promo-video-col">
-        <div class="img promo-video lazy lazy-loaded">
-          <div class="overlay">
-            <div class="promo-video-wrapper">
-              <h2>Header here</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                nec nulla eu risus ornare tincidunt.
+      <!-- END SHOP BY CATEGORY  -->
+
+      <!-- FEATURED VIDEOS  -->
+
+      <div class="container-fluid featured-videos-section">
+        <div class="container featured-videos-container">
+          <p class="section-title-light">FEATURED SELLER STORIES</p>
+          <div class="row video-row">
+            <div class="col-md-4 video-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/eMOmEGEjdx0"
+                  frameborder="0"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-4 video-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/1Vshz4-SFQ0"
+                  frameborder="0"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-4 video-item">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="https://www.youtube.com/embed/Sq1YORqKhNA"
+                  frameborder="0"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END FEATURED VIDEOS  -->
+
+      <!-- SO EASY STEPS  -->
+
+      <div class="container-fluid so-easy-section">
+        <div class="row so-easy-row">
+          <div
+            class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fast"
+          >
+            <p class="icon-so-easy">SO FAST!</p>
+            <p>
+              <i
+                id="animated-van"
+                class="animate__delay-2s fas fa-shipping-fast"
+              ></i>
+            </p>
+            <div class="so-easy-rollover">
+              <p class="so-easy-rollover-content">
+                Quickly search for local farms in your area
               </p>
             </div>
           </div>
-          <div class="promo-video-123">
-            <p class="promo-video-header">
-              How it works... <br />As simple as 1, 2, 3.
-            </p>
-          </div>
-          <div class="youtube-icon-wrapper">
-            <div type="button" class="youtube-btn" data-toggle="modal" data-target="#exampleModal2">
-              <i class="fab fa-youtube"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END SUPPORT OUR FARMS AND DFS VIDEO  -->
-
-  <!-- JOIN US  -->
-
-  <div class="container-fluid join-us-container">
-    <div class="row support-farmers-row">
-      <div class="col col-md-6 promo-video-col">
-        <div class="img join-us lazy lazy-loaded">
-          <div class="join-us-btn-wrapper">
-            <button class="join-us-btn">Join Us</button>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-6 join-us-col">
-        <div class="join-us-content-block">
-          <p class="join-us-header">ARE YOU A LOCAL FARMER?</p>
-          <div class="join-us-text">
-            <p>
-              <span class="join-us-text-highlight">Sell direct</span> to
-              customers, no dealing with distributors
-            </p>
-
-            <p>
-              <span class="join-us-text-highlight">We market your brand</span>
-              and take care of deliveries and more
-            </p>
-
-            <p>
-              <span class="join-us-text-highlight">Start an online journey</span>
-              that will help grow your customer base
-            </p>
-
-            <p>
-              <span class="join-us-text-highlight">Get paid directly</span>
-              and immediately into your own merchant account
-            </p>
-
-            <p></p>
-            <span class="join-us-text-highlight">Are you ready?</span>
-            List your goods for millions of people to shop!
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END JOIN US  -->
-  
-   <!-- ABORIGINAL AND USA BLOCKS   -->
-
-   <div class="container-fluid aboriginal-container">
-    <div class="row aboriginal-row">
-      <div class="col col-md-6 aboriginal">
-        <div class="aboriginal-wrapper">
-          <p class="aboriginal-header">Showcasing the best of indigenous & First Nations communities</p>
-          <p class="aboriginal-text">
-            First Nations can take advantage of this platform and become part of the new design for the First Nations and surrounding communities through easy access and delivery of local fresh produce and crafts. Bring your unique products online and securely sell to help build a local, sustainable economy, instantly. Become part of a healthy lifestyle eco-system!
-          </p>
-          <p class="link"><a href="https://directfood.store/firstnations" target="_blank">Learn More &rarr;</a></p>
-        </div>
-      </div>
-
-      <div class="col col-md-6 promo-video-col">
-        <div class="img usa lazy lazy-loaded">
-          <div class="usa-overlay lazy lazy-loaded">          </div>
-            <div class="usa-wrapper">
-              <p class="usa-header">Experience the Best of South Carolina</p>
-              <p class="usa-text">
-                DirectFood.store is excited to expand to US with our first partnership with Department of Agriculture South Carolina. Through this partnership, DFS will work with local farmers in South Carolina and deliver fresh produce to the local communities. 
+          <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-left so-fresh">
+            <p class="icon-so-easy">SO FRESH!</p>
+            <p><i class="fas fa-leaf"></i></p>
+            <div class="so-easy-rollover">
+              <p class="so-easy-rollover-content">
+                Place your order for fresh & flavourful food
               </p>
             </div>
-
-
+          </div>
+          <div class="col-xs-6 col-md-3 easy-boxes easy-boxes-right so-easy">
+            <p class="icon-so-easy">SO EASY!</p>
+            <p><i class="fab fa-simplybuilt"></i></p>
+            <div class="so-easy-rollover">
+              <p class="so-easy-rollover-content">
+                Food is delivered to your door, no hassles
+              </p>
+            </div>
+          </div>
+          <div
+            class="animate__delay-1s col-xs-6 col-md-3 easy-boxes easy-boxes-right eat-chill"
+          >
+            <p class="icon-so-easy">EAT & CHILL</p>
+            <p><i class="fas fa-utensils"></i></p>
+            <div class="so-easy-rollover">
+              <p class="so-easy-rollover-content">
+                Pick your favourite farms & get regular deliveries
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- END ABORIGINAL AND USA BLOCKS   -->
+      <!-- END SO EASY STEPS  -->
 
-  <!-- FEATURED BLOGS AND RECIPES CAROUSEL  -->
+      <!-- FARMS/SELLERS CAROUSEL  -->
 
-  <div class="container-fluid blog-container">
-    <div class="row blog-row">
-      <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded">
-        <!-- <div class="overlay">
+      <div class="container-fluid farms-listing-section">
+        <p class="section-title-dark">FARMS ON DIRECTFOODSTORE.COM</p>
+
+        <p style="text-align: center; padding-bottom: 200px">
+          ---Just pull this section in as is without the skewed style or grey
+          background color---
+        </p>
+      </div>
+
+      <!-- END FARMS/SELLERS CAROUSEL  -->
+
+      <!-- SUPPORT OUR FARMS AND DFS VIDEO  -->
+
+      <div class="container-fluid support-farmers-container">
+        <div class="row support-farmers-row">
+          <div class="col col-md-6 support-farmers">
+            <div class="support-community-wrapper">
+              <p class="support-local-header">SUPPORT OUR LOCAL COMMUNITY</p>
+              <p class="support-local-text">
+                DirectFood.store brings customers, farmers, and restaurants
+                together on one unique and easy-to-use platform. Get access to
+                fresh, local and organic products while supporting and becoming
+                part of a thriving local economy. Together, we can create an
+                online grocery shopping experience that builds communities,
+                promotes sustainable practices while sharing our stories and,
+                most importantly, supporting our local farmers and vendors.
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-md-6 promo-video-col">
+            <div class="img promo-video lazy lazy-loaded">
+              <div class="overlay">
+                <div class="promo-video-wrapper">
+                  <h2>Header here</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis nec nulla eu risus ornare tincidunt.
+                  </p>
+                </div>
+              </div>
+              <div class="promo-video-123">
+                <p class="promo-video-header">
+                  How it works... <br />As simple as 1, 2, 3.
+                </p>
+              </div>
+              <div class="youtube-icon-wrapper">
+                <div
+                  type="button"
+                  class="youtube-btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal2"
+                >
+                  <i class="fab fa-youtube"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END SUPPORT OUR FARMS AND DFS VIDEO  -->
+
+      <!-- JOIN US  -->
+
+      <div class="container-fluid join-us-container">
+        <div class="row support-farmers-row">
+          <div class="col col-md-6 promo-video-col">
+            <div class="img join-us lazy lazy-loaded">
+              <div class="join-us-btn-wrapper">
+                <button class="join-us-btn">Join Us</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 join-us-col">
+            <div class="join-us-content-block">
+              <p class="join-us-header">ARE YOU A LOCAL FARMER?</p>
+              <div class="join-us-text">
+                <p>
+                  <span class="join-us-text-highlight">Sell direct</span> to
+                  customers, no dealing with distributors
+                </p>
+
+                <p>
+                  <span class="join-us-text-highlight"
+                    >We market your brand</span
+                  >
+                  and take care of deliveries and more
+                </p>
+
+                <p>
+                  <span class="join-us-text-highlight"
+                    >Start an online journey</span
+                  >
+                  that will help grow your customer base
+                </p>
+
+                <p>
+                  <span class="join-us-text-highlight">Get paid directly</span>
+                  and immediately into your own merchant account
+                </p>
+
+                <p></p>
+                <span class="join-us-text-highlight">Are you ready?</span>
+                List your goods for millions of people to shop!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END JOIN US  -->
+
+      <!-- ABORIGINAL AND USA BLOCKS   -->
+
+      <div class="container-fluid aboriginal-container">
+        <div class="row aboriginal-row">
+          <div class="col col-md-6 aboriginal">
+            <div class="aboriginal-wrapper">
+              <p class="aboriginal-header">
+                Showcasing the best of indigenous & First Nations communities
+              </p>
+              <p class="aboriginal-text">
+                First Nations can take advantage of this platform and become
+                part of the new design for the First Nations and surrounding
+                communities through easy access and delivery of local fresh
+                produce and crafts. Bring your unique products online and
+                securely sell to help build a local, sustainable economy,
+                instantly. Become part of a healthy lifestyle eco-system!
+              </p>
+              <p class="link">
+                <a href="https://directfood.store/firstnations" target="_blank"
+                  >Learn More &rarr;</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col col-md-6 promo-video-col">
+            <div class="img usa lazy lazy-loaded">
+              <div class="usa-overlay lazy lazy-loaded"></div>
+              <div class="usa-wrapper">
+                <p class="usa-header">Experience the Best of South Carolina</p>
+                <p class="usa-text">
+                  DirectFood.store is excited to expand to US with our first
+                  partnership with Department of Agriculture South Carolina.
+                  Through this partnership, DFS will work with local farmers in
+                  South Carolina and deliver fresh produce to the local
+                  communities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END ABORIGINAL AND USA BLOCKS   -->
+
+      <!-- FEATURED BLOGS AND RECIPES CAROUSEL  -->
+
+      <div class="container-fluid blog-container">
+        <div class="row blog-row">
+          <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded">
+            <!-- <div class="overlay">
             <div class="recipe-content-wrapper">
               <h2>Header here</h2>
               <p>Text here</p>
             </div>
           </div> -->
-        <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
+            <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
 
-        <!-- Category Pills  -->
-        <div class="category-pills-wrapper">
-          <h5 class="category-pill-items">
-            <span class="badge badge-pill badge-primary blog-badge">Pizza</span>
-            <span class="badge badge-pill badge-secondary blog-badge">Recipe</span>
-            <span class="badge badge-pill badge-light blog-badge">Blog</span>
-            <span class="badge badge-pill badge-success blog-badge">Special</span>
-            <span class="badge badge-pill badge-danger blog-badge">Look at me</span>
-          </h5>
-        </div>
-        <!-- End Category Pills  -->
+            <!-- Category Pills  -->
+            <div class="category-pills-wrapper">
+              <h5 class="category-pill-items">
+                <span class="badge badge-pill badge-primary blog-badge"
+                  >Pizza</span
+                >
+                <span class="badge badge-pill badge-secondary blog-badge"
+                  >Recipe</span
+                >
+                <span class="badge badge-pill badge-light blog-badge"
+                  >Blog</span
+                >
+                <span class="badge badge-pill badge-success blog-badge"
+                  >Special</span
+                >
+                <span class="badge badge-pill badge-danger blog-badge"
+                  >Look at me</span
+                >
+              </h5>
+            </div>
+            <!-- End Category Pills  -->
 
-        <div class="recipe-block">RECIPE</div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 blog d-none">
-        <!-- <div class="blog-overlay">
+            <div class="recipe-block">RECIPE</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 blog d-none">
+            <!-- <div class="blog-overlay">
             <div class="blog-content-wrapper">
               <h2>Header here</h2>
               <p>Text here</p>
             </div>
           </div> -->
-        <img src="assets/farm-logos/59F7E7F70467B68402C3E9F625EB16E7_.png" alt="" />
+            <img
+              src="assets/farm-logos/59F7E7F70467B68402C3E9F625EB16E7_.png"
+              alt=""
+            />
 
-        <div class="blog-block">BLOG</div>
+            <div class="blog-block">BLOG</div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded d-none"
+          >
+            <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
+            <div class="recipe-block">RECIPE</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 blog d-none">
+            <img
+              src="/assets/farm-logos/88FF2F7632C2EC1EF2926A3264858B21_.png"
+              alt=""
+            />
+            <div class="blog-block">BLOG</div>
+            <div class="clear-fix"></div>
+          </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 recipe lazy lazy-loaded d-none">
-        <p class="recipe-header">Baked Pepperoni Cheese Pizza Deluxe</p>
-        <div class="recipe-block">RECIPE</div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 blog d-none">
-        <img src="/assets/farm-logos/88FF2F7632C2EC1EF2926A3264858B21_.png" alt="" />
-        <div class="blog-block">BLOG</div>
-        <div class="clear-fix"></div>
-      </div>
-    </div>
-  </div>
 
-  <!-- END FEATURED BLOGS AND RECIPES  -->
+      <!-- END FEATURED BLOGS AND RECIPES  -->
 
-  <!-- SUBSCRIBE  -->
+      <!-- SUBSCRIBE  -->
 
-  <div class="newsletter-section clearfix">
-    <div class="container newsletter-container">
-      <div class="row newsletter-row">
-        <div class="col-12">
-          <div class="newsletter-wrapper">
-            <div class="text-wrapper">
-              <h2 class="newsletter-title title-color">
-                news that’s good for you!
-              </h2>
-              <p class="sub-title-color">
-                Get weekly updates, access to exclusive deals, our products,
-                recipes, farm stories, and more.
-              </p>
-            </div>
+      <div class="newsletter-section clearfix">
+        <div class="container newsletter-container">
+          <div class="row newsletter-row">
+            <div class="col-12">
+              <div class="newsletter-wrapper">
+                <div class="text-wrapper">
+                  <h2 class="newsletter-title title-color">
+                    news that’s good for you!
+                  </h2>
+                  <p class="sub-title-color">
+                    Get weekly updates, access to exclusive deals, our products,
+                    recipes, farm stories, and more.
+                  </p>
+                </div>
 
-            <div class="subscribe clearfix">
-              <form id="send-newsletter" action="/Newsletter" method="post">
-                <input type="text" name="email" placeholder="johndoe@email.com" />
-                <button class="submit-btn-2 btn-hover-2" type="submit">
-                  subscribe
-                </button>
-              </form>
+                <div class="subscribe clearfix">
+                  <form id="send-newsletter" action="/Newsletter" method="post">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="johndoe@email.com"
+                    />
+                    <button class="submit-btn-2 btn-hover-2" type="submit">
+                      subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- END SUBSCRIBE  -->
+      <!-- END SUBSCRIBE  -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button onClick="closeModal()" type="button" class="close" id="close-modal" data-dismiss="modal"
-            aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="//fast.wistia.net/embed/iframe/at6dqipf6r?videoFoam=true" allowtransparency="true"
-              frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen
-              webkitallowfullscreen oallowfullscreen msallowfullscreen width="800"></iframe>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                onClick="closeModal()"
+                type="button"
+                class="close"
+                id="close-modal"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  src="//fast.wistia.net/embed/iframe/at6dqipf6r?videoFoam=true"
+                  allowtransparency="true"
+                  frameborder="0"
+                  scrolling="no"
+                  class="wistia_embed"
+                  name="wistia_embed"
+                  allowfullscreen
+                  mozallowfullscreen
+                  webkitallowfullscreen
+                  oallowfullscreen
+                  msallowfullscreen
+                  width="800"
+                ></iframe>
 
-            <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+                <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Latest compiled and minified JavaScript -->
+      <!-- Latest compiled and minified JavaScript -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"
+      ></script>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+      ></script>
 
-  <script language="javascript" type="text/javascript">
-    $(function () {
-      $('.close').click(function () {
-        $('iframe').attr('src', $('iframe').attr('src'));
-      });
-    });
-  </script>
-
-  <script>
-    $(document).on('click', '.nav-link.active', function () {
-      var href = $(this).attr('href').substring(1);
-      //alert(href);
-      $(this).removeClass('active');
-      $('.tab-pane[id="' + href + '"]').removeClass('active');
-    });
-    $(document).mouseup(function (e) {
-      var container = $('#tablist'); // target ID or class
-      // if the target of the click isn't the container nor a descendant of the container
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        // get Event here
-        $('.active').removeClass('active');
-      }
-    });
-  </script>
-
-  <script language="javascript" type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-      var lazyloadImages;
-
-      if ('IntersectionObserver' in window) {
-        lazyloadImages = document.querySelectorAll('.lazy');
-        var imageObserver = new IntersectionObserver(function (
-          entries,
-          observer
-        ) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              var image = entry.target;
-              image.classList.remove('lazy');
-              imageObserver.unobserve(image);
-            }
+      <script language="javascript" type="text/javascript">
+        $(function () {
+          $('.close').click(function () {
+            $('iframe').attr('src', $('iframe').attr('src'));
           });
         });
+      </script>
 
-        lazyloadImages.forEach(function (image) {
-          imageObserver.observe(image);
+      <script>
+        $(document).on('click', '.nav-link.active', function () {
+          var href = $(this).attr('href').substring(1);
+          //alert(href);
+          $(this).removeClass('active');
+          $('.tab-pane[id="' + href + '"]').removeClass('active');
         });
-      } else {
-        var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll('.lazy');
-
-        function lazyload() {
-          if (lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout);
+        $(document).mouseup(function (e) {
+          var container = $('#tablist'); // target ID or class
+          // if the target of the click isn't the container nor a descendant of the container
+          if (!container.is(e.target) && container.has(e.target).length === 0) {
+            // get Event here
+            $('.active').removeClass('active');
           }
+        });
+      </script>
 
-          lazyloadThrottleTimeout = setTimeout(function () {
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function (img) {
-              if (img.offsetTop < window.innerHeight + scrollTop) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-              }
+      <script language="javascript" type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+          var lazyloadImages;
+
+          if ('IntersectionObserver' in window) {
+            lazyloadImages = document.querySelectorAll('.lazy');
+            var imageObserver = new IntersectionObserver(function (
+              entries,
+              observer
+            ) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  var image = entry.target;
+                  image.classList.remove('lazy');
+                  imageObserver.unobserve(image);
+                }
+              });
             });
-            if (lazyloadImages.length == 0) {
-              document.removeEventListener('scroll', lazyload);
-              window.removeEventListener('resize', lazyload);
-              window.removeEventListener('orientationChange', lazyload);
+
+            lazyloadImages.forEach(function (image) {
+              imageObserver.observe(image);
+            });
+          } else {
+            var lazyloadThrottleTimeout;
+            lazyloadImages = document.querySelectorAll('.lazy');
+
+            function lazyload() {
+              if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+              }
+
+              lazyloadThrottleTimeout = setTimeout(function () {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function (img) {
+                  if (img.offsetTop < window.innerHeight + scrollTop) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                  }
+                });
+                if (lazyloadImages.length == 0) {
+                  document.removeEventListener('scroll', lazyload);
+                  window.removeEventListener('resize', lazyload);
+                  window.removeEventListener('orientationChange', lazyload);
+                }
+              }, 20);
             }
-          }, 20);
-        }
 
-        document.addEventListener('scroll', lazyload);
-        window.addEventListener('resize', lazyload);
-        window.addEventListener('orientationChange', lazyload);
-      }
-    });
-  </script>
+            document.addEventListener('scroll', lazyload);
+            window.addEventListener('resize', lazyload);
+            window.addEventListener('orientationChange', lazyload);
+          }
+        });
+      </script>
 
-  <script language="javascript" type="text/javascript">
-    $(document).ready(function () {
-      new WOW().init();
-    });
-  </script>
-  
-  
-  <script>
+      <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+          new WOW().init();
+        });
+      </script>
 
-    // $(document).ready(function(){
-    //   $( ".expanded-delivery-locations-toggle" ).hide();
-    //   $(".collapsed-delivery-locations-toggle").click(function(){
-    //   $(".expanded-delivery-locations-toggle").slideToggle();
-    //     });
-    // });
+      <script>
+        // $(document).ready(function(){
+        //   $( ".expanded-delivery-locations-toggle" ).hide();
+        //   $(".collapsed-delivery-locations-toggle").click(function(){
+        //   $(".expanded-delivery-locations-toggle").slideToggle();
+        //     });
+        // });
+      </script>
 
-</script>
-      
-  <!-- <script>
+      <!-- <script>
     $(document).ready(function(){
       $( ".expanded-delivery-locations-toggle" ).hide();
       
@@ -988,103 +1164,99 @@
 });
     });
     </script> -->
-    
-    <script>
-      $(document).ready(function(){
-        $( ".expanded-delivery-locations-toggle" ).hide();
-        $(".collapsed-delivery-locations-toggle").click(function(){
-          $(".expanded-delivery-locations-toggle").slideDown();
-        });
-        $(".expanded-delivery-locations-toggle").click(function(){
-          $(".expanded-delivery-locations-toggle").slideUp();
-        });
-      });
-      </script>
-      
+
       <script>
-        $(document).scroll(function() {
-      var y = $(this).scrollTop();
-      if (y > 600) {
-      $('.fixed-CTA').fadeIn();
-      } else {
-      $('.fixed-CTA').fadeOut();
-      }
-      });
+        $(document).ready(function () {
+          $('.expanded-delivery-locations-toggle').hide();
+          $('.collapsed-delivery-locations-toggle').click(function () {
+            $('.expanded-delivery-locations-toggle').slideDown();
+          });
+          $('.expanded-delivery-locations-toggle').click(function () {
+            $('.expanded-delivery-locations-toggle').slideUp();
+          });
+        });
       </script>
-      
+
+      <script>
+        $(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 600) {
+            $('.fixed-CTA').fadeIn();
+          } else {
+            $('.fixed-CTA').fadeOut();
+          }
+        });
+      </script>
+
       <!-- Easy Boxes MDB Replace  -->
-      
+
       <script>
-                $(document).scroll(function() {
-      var b = $(this).scrollTop();
-      if (b > 2700) {
-      $(".easy-boxes").addClass("animate__animated");
-      $(".easy-boxes-left").addClass("animate__slideInLeft");
-      $(".easy-boxes-right").addClass("animate__slideInRight");
-      $("#animated-van").addClass("animate__animated"); 
-      $("#animated-van").addClass("animate__bounceInLeft");
-      } 
-       });
+        $(document).scroll(function () {
+          var b = $(this).scrollTop();
+          if (b > 2700) {
+            $('.easy-boxes').addClass('animate__animated');
+            $('.easy-boxes-left').addClass('animate__slideInLeft');
+            $('.easy-boxes-right').addClass('animate__slideInRight');
+            $('#animated-van').addClass('animate__animated');
+            $('#animated-van').addClass('animate__bounceInLeft');
+          }
+        });
       </script>
-      
+
       <script language="javascript" type="text/javascript">
-        $(document).ready(function(){
-  $(".modal-button-ghost").click(function(){
-    $(".collapsed-delivery-locations-toggle").fadeOut();
-  });
-});
+        $(document).ready(function () {
+          $('.modal-button-ghost').click(function () {
+            $('.collapsed-delivery-locations-toggle').fadeOut();
+          });
+        });
       </script>
-      
+
       <script>
-        $(function() {
-    /* For each horizontal scroll container, add a wrapper & set it's shadows */
-    $(".category-tabs").each(function() {
-      $(this).wrap('<div class="category-tabs-wrap"></div>');
-      setContainerScroll($(this));
-    });
-    
-    /* Set shadows when window is resized */
-    $(window).on("resize", function() {
-      $(".category-tabs").each(function() {	
-        setContainerScroll($(this));
-      });
-    });
-  
-  
-    $(".category-tabs").on("scroll", function() {	
-      setContainerScroll($(this));
-  
-    });
-  });
-  
-  function setContainerScroll($container) {
-      var $this = $container,
-        scrollLeft = $this.scrollLeft(),
-        maxScrollWidth = $this.innerWidth(),
-        maxScrollAmt = $this.find("ul").prop('scrollWidth') - maxScrollWidth;
-  
-      if (scrollLeft >= maxScrollAmt) {
-        $this.closest(".category-tabs-wrap").addClass("scrolled-right");
-      } else {
-        $this.closest(".category-tabs-wrap").removeClass("scrolled-right");
-      }
-  
-      if (scrollLeft > 0) {
-        $this.closest(".category-tabs-wrap").addClass("scrolled-left");
-      } else {
-        $this.closest(".category-tabs-wrap").removeClass("scrolled-left");
-      }
-    }
+        $(function () {
+          /* For each horizontal scroll container, add a wrapper & set it's shadows */
+          $('.category-tabs').each(function () {
+            $(this).wrap('<div class="category-tabs-wrap"></div>');
+            setContainerScroll($(this));
+          });
+
+          /* Set shadows when window is resized */
+          $(window).on('resize', function () {
+            $('.category-tabs').each(function () {
+              setContainerScroll($(this));
+            });
+          });
+
+          $('.category-tabs').on('scroll', function () {
+            setContainerScroll($(this));
+          });
+        });
+
+        function setContainerScroll($container) {
+          var $this = $container,
+            scrollLeft = $this.scrollLeft(),
+            maxScrollWidth = $this.innerWidth(),
+            maxScrollAmt =
+              $this.find('ul').prop('scrollWidth') - maxScrollWidth;
+
+          if (scrollLeft >= maxScrollAmt) {
+            $this.closest('.category-tabs-wrap').addClass('scrolled-right');
+          } else {
+            $this.closest('.category-tabs-wrap').removeClass('scrolled-right');
+          }
+
+          if (scrollLeft > 0) {
+            $this.closest('.category-tabs-wrap').addClass('scrolled-left');
+          } else {
+            $this.closest('.category-tabs-wrap').removeClass('scrolled-left');
+          }
+        }
       </script>
-      
-        <script>
-    $(document).ready(function(){
-        $("#myModal").modal('show');
-    });
-</script>
-    
 
+      <script>
+        $(document).ready(function () {
+          $('#myModal').modal('show');
+        });
+      </script>
     </div>
-</body>
-
+  </body>
 </html>
