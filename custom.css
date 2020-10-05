@@ -1765,7 +1765,7 @@ select:focus {
   }
   
   .container-fluid.category-container {
-    top: 50px;
+    top: 44px;
     position: relative;
   }
 
@@ -1948,6 +1948,15 @@ select:focus {
   
   .menu-content-left {
     margin-right: 5% !important;
+    min-width: 50%;
+  }
+  
+  .menu-content-left ul {
+    padding-left: 20px !important;
+  }
+  
+  .all {
+    padding: 20px 20px 16px 20px !important;
   }
   
   .text-wrapper {
