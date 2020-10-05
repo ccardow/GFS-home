@@ -1930,10 +1930,12 @@ select:focus {
   }
   
   .newsletter-title.title-color {
-    font-size: 52px;
+    font-size: 42px !important;
+    white-space: nowrap !important;
   }
   .sub-title-color {
-    font-size: 18px;
+    font-size: 28px;
+    margin-top: -8px;
   }
   
   .menu-content-right {
@@ -1948,5 +1950,8 @@ select:focus {
     margin-right: 5% !important;
   }
   
+  .text-wrapper {
+    width: 100%;
+  }
 }
 
