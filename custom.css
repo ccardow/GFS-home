@@ -1901,10 +1901,30 @@ select:focus {
   }
 
   .subscribe.clearfix {
-    width: 320px;
+    width: 300px;
   }
 
   .join-us-col {
     height: 420px;
+  }
+  
+  .modal-header-welcome {
+    font-size: 48px;
+  }
+  
+  .join-us-content-block {
+    padding: 3%;
+  }
+  
+  .aboriginal-wrapper {
+    padding: 4% 3% 3% 3%;
+  }
+  
+  .aboriginal-header {
+    font-size: 54px;
+  }
+  
+  .modal-button-ghost {
+    font-size: 12px;
   }
 }
