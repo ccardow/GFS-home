@@ -1926,5 +1926,27 @@ select:focus {
   
   .modal-button-ghost {
     font-size: 12px;
+    letter-spacing: 3px;
   }
+  
+  .newsletter-title.title-color {
+    font-size: 52px;
+  }
+  .sub-title-color {
+    font-size: 18px;
+  }
+  
+  .menu-content-right {
+    padding: 5px 5px 10px 0 !important;
+  }
+  
+  .menu-content-right img {
+    width: 100% !important;
+  }
+  
+  .menu-content-left {
+    margin-right: 5% !important;
+  }
+  
 }
+
