@@ -44,7 +44,7 @@
 	height: 535px;
 	width: 100%;
 	margin: 0 15px 0 0;
-	background: url('assets/girl-with-chicken-906x600.jpg') no-repeat top center;
+	background: url('../assets/girl-with-chicken-906x600.jpg') no-repeat top center;
 	background-size: cover;
 	padding-right: 0;
 	padding-left: 0;
@@ -120,7 +120,7 @@
 	height: 535px;
 	width: 100%;
 	margin: 0 15px 0 0;
-	background: url('assets/farmer-join-us-900x600.jpg') no-repeat top center;
+	background: url('../assets/farmer-join-us-900x600.jpg') no-repeat top center;
 	background-size: cover;
 	padding-right: 0;
 	padding-left: 0;
@@ -212,7 +212,7 @@
 	height: 535px;
 	width: 100%;
 	margin: 0 15px 0 0;
-	background: url('assets/Aerial-Hyland.jpg') no-repeat top center;
+	background: url('../assets/Aerial-Hyland.jpg') no-repeat top center;
 	background-size: cover;
 	padding-right: 0;
 	padding-left: 0;
@@ -224,7 +224,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url('assets/american-flag.jpg') no-repeat top center;
+	background: url('../assets/american-flag.jpg') no-repeat top center;
 	background-size: cover;
 	overflow: hidden;
 	width: 100%;

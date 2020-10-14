@@ -48,7 +48,7 @@
 	height: 95%;
 	width: 100%;
 	margin: 0 15px 0 0;
-	background: url('assets/featured-products/2.png') no-repeat center center;
+	background: url('../assets/featured-products/2.png') no-repeat center center;
 	background-size: cover;
   }
   
@@ -56,7 +56,7 @@
 	width: 97%;
 	height: calc(50% - 15px);
 	margin: 0 0 30px 15px;
-	background: url('assets/featured-products/4.png') no-repeat center center;
+	background: url('../assets/featured-products/4.png') no-repeat center center;
 	background-size: cover;
   }
   
@@ -64,7 +64,7 @@
 	width: 97%;
 	height: calc(45% - 15px);
 	margin: 15px 0 0 15px;
-	background: url('assets/featured-products/5.png') no-repeat center center;
+	background: url('../assets/featured-products/5.png') no-repeat center center;
 	background-size: cover;
   }
   
