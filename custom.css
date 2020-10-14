@@ -1,19 +1,19 @@
 /* IMPORTS  */
-@import "/modules/global.css";
-@import "/modules/modal_location.css";
-@import "/modules/utilities.css";
-@import "/modules/location-marker.css";
-@import "/modules/fixed-cta_button.css";
-@import "/modules/category-menu.css";
-@import "/modules/delivery-locations.css";
-@import "/modules/vibe-van.css";
-@import "/modules/hero.css";
-@import "/modules/featured-products.css";
-@import "/modules/shop-by-category.css";
-@import "/modules/so-easy.css";
-@import "/modules/block-section.css";
-@import "/modules/blog-section.css";
-@import "/modules/newsletter.css";
+@import "modules/global.css";
+@import "modules/modal_location.css";
+@import "modules/utilities.css";
+@import "modules/location-marker.css";
+@import "modules/fixed-cta_button.css";
+@import "modules/category-menu.css";
+@import "modules/delivery-locations.css";
+@import "modules/vibe-van.css";
+@import "modules/hero.css";
+@import "modules/featured-products.css";
+@import "modules/shop-by-category.css";
+@import "modules/so-easy.css";
+@import "modules/block-section.css";
+@import "modules/blog-section.css";
+@import "modules/newsletter.css";
 
 /* Product Listing ******DO NOT IMPORT******  */
 .product-card-listing {
