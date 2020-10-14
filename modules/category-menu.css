@@ -178,6 +178,27 @@
   }
   
   @media only screen and (max-width: 540px) {
+	  
+	.menu-content-right {
+		display: none;
+	}
+	
+	.menu-content-left {
+		width: 100%;
+		margin: 0;
+		background-color: var(--primary-dark-grey);
+		color: #fff;
+	}
+	
+	.tab-content UL > li > a {
+		color: #fff;
+	}
+	
+	.menu-content-left p > a {
+		color: #fff;
+		padding-bottom: 4px;
+		border-bottom: 2px solid var(--primary-blue);
+	}
 	    
 	.container-fluid.category-container {
 		top: 42px;
