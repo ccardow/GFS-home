@@ -1,0 +1,77 @@
+.vibe-van {
+	width: 40%;
+  }
+  
+  .animate__animated.bounceInRight {
+	--animate-duration: 2s;
+  }
+  
+  .pos-z-index {
+	position: relative;
+	z-index: 10;
+	contain: paint;
+  }
+  
+  
+  @media only screen and (max-width: 990px) and (min-width: 769px) {
+	.vibe-van {
+	  position: absolute;
+	  bottom: -16px;
+	  right: 20px;
+	  z-index: 10;
+	  width: 50%;
+	}
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1200px) {
+	.vibe-van {
+	  position: absolute;
+	  bottom: -50px;
+	  right: 96px;
+	  z-index: 10;
+	}
+	
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991px) {
+	.vibe-van {
+	  position: absolute;
+	  bottom: -16px;
+	  right: 96px;
+	  z-index: 10;
+	}
+	
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1441px) {
+	.vibe-van {
+	  position: absolute;
+	  right: 100px;
+	  bottom: -50px;
+	  z-index: 10;
+	}
+}
+
+
+@media only screen and (max-width: 3840px) and (min-width: 1921px) {
+	.vibe-van {
+	  position: absolute;
+	  bottom: -50px;
+	  right: 64px;
+	  z-index: 10;
+	  width: 44%;
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.vibe-van {
+		width: 50%;
+	  }
+}
+
+@media only screen and (max-width: 540px) {
+	.vibe-van {
+		width: 64%;
+	  }
+}

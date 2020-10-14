@@ -227,24 +227,24 @@
           </div>
         </div>
 
-        <div class="location-marker">
-          <div class="dropdown">
+        <div class="location-marker" id="location-marker">
+          <div class="dropdown" id="location-dropdown">
             <button
-              class="btn btn-default dropdown-toggle"
+              class="btn dropdown-toggle location-btn"
               type="button"
-              id="dropdownMenu1"
+              id="dropdownMenu-loc"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="true"
             >
               <img src="assets/location-icon.svg" alt="Location" />
               <span class="location-text">Vancouver, BC</span>
-              <span class="caret location-caret"></span>
+              <span class="caret location-caret" id="location-caret"></span>
             </button>
             <ul
               class="dropdown-menu"
               id="custom-dropdown"
-              aria-labelledby="dropdownMenu1"
+              aria-labelledby="dropdownMenu-loc"
             >
               <li><a href="#">Vancouver, BC</a></li>
               <li role="separator" class="divider"></li>

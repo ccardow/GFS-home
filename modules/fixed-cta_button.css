@@ -1,0 +1,40 @@
+button.fixed-CTA {
+	position: fixed;
+	bottom: 0;
+	left: 2px;
+	z-index: 12;
+	border: none;
+	background: -webkit-radial-gradient( left top, circle cover, rgb(12, 180, 206), rgb(72, 132, 194) 100% );
+	padding: 12px;
+	border-radius: 16px 16px 0 0;
+	box-shadow: 0 -4px 4px rgba(0,0,0,.2);
+	
+  }
+  
+  button.fixed-CTA a {
+  color: #fff;
+  }
+  
+  .hide-me {
+	display: none;
+  }
+  
+  .show-me {
+	display: block;
+  }
+  
+  @media only screen and (min-width: 540px) {
+
+	button.fixed-CTA {
+	  padding: 16px 24px;
+	}
+	
+	button.fixed-CTA a {
+	  color: #fff;
+	  font-weight: 500;
+	  letter-spacing: 1.3px;
+	  
+	}
+	
+  
+  }

@@ -1,0 +1,339 @@
+/* Support Farmers and Promotional Video  */
+
+.support-farmers {
+	height: 535px;
+	background: -webkit-radial-gradient(
+	  left top,
+	  circle cover,
+	  rgb(12, 180, 206),
+	  rgb(72, 132, 194) 100%
+	);
+	color: #fff;
+  }
+  
+  .support-community-wrapper,
+  .aboriginal-wrapper {
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+  }
+  
+  .support-local-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1;
+  }
+  
+  .support-local-text,
+  .aboriginal-text,
+  .usa-text {
+	line-height: 2;
+	font-size: 1.1em;
+  }
+  
+  .promo-video-col {
+	padding-left: 0;
+	padding-right: 0;
+  }
+  
+  .promo-video {
+	height: 100%;
+	height: 535px;
+	width: 100%;
+	margin: 0 15px 0 0;
+	background: url('/assets/girl-with-chicken-906x600.jpg') no-repeat top center;
+	background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
+	position: relative;
+  }
+  
+  .promo-video:hover .overlay {
+	height: 30%;
+  }
+  
+  .promo-video-wrapper {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 100%;
+	padding: 0 30px 0 30px;
+  }
+  
+  .promo-video-123 {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: calc(
+	  36px + (48 - 36) * ((100vw - 300px) / (2600 - 300))
+	) !important;
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	z-index: 3;
+	line-height: 1;
+	padding: 40px;
+  }
+  
+  .youtube-icon-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 44%;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 80px;
+	cursor: pointer;
+  }
+  
+  .youtube-icon-wrapper:hover {
+	color: #f70000;
+  }
+  
+  .youtube-btn {
+	background-color: transparent;
+	border: none;
+	padding-left: 0;
+  }
+  .youtube-btn:hover,
+  .youtube-btn:active,
+  .youtube-btn:focus {
+	background-color: transparent;
+	border: none;
+	padding-left: 0;
+  }
+  
+  /* Join Us */
+  
+  .join-us-col {
+	position: relative;
+	background-color: var(--primary-medium-grey);
+	height: 535px;
+	color: #fff;
+  }
+  
+  .join-us {
+	height: 535px;
+	width: 100%;
+	margin: 0 15px 0 0;
+	background: url('/assets/farmer-join-us-900x600.jpg') no-repeat top center;
+	background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
+	position: relative;
+  }
+  
+  .join-us-text-highlight {
+	color: var(--primary-orange);
+	font-weight: 600;
+  }
+  
+  .join-us-wrapper {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 11%;
+  }
+  
+  /* New  */
+  .join-us-content-block {
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+  }
+  
+  .join-us-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1;
+  }
+  
+  .join-us-text {
+	font-size: calc(
+	  14px + (18 - 14) * ((100vw - 300px) / (2600 - 300))
+	) !important;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 500;
+  }
+  
+  .join-us-text > p {
+	margin-bottom: 16px;
+  }
+  
+  .join-us-btn-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: var(--primary-orange);
+	font-size: 64px;
+  }
+  
+  /* Aboriginals  */
+  
+  .aboriginal {
+	height: 535px;
+	background: -webkit-radial-gradient(
+	  left top,
+	  circle cover,
+	  var(--primary-orange),
+	  var(--primary-orange) 100%
+	);
+	color: #fff;
+  }
+  
+  .aboriginal-wrapper {
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+  }
+  
+  .aboriginal-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1.1;
+  }
+  
+  /* USA  */
+  
+  .usa {
+	height: 100%;
+	height: 535px;
+	width: 100%;
+	margin: 0 15px 0 0;
+	background: url('/assets/Aerial-Hyland.jpg') no-repeat top center;
+	background-size: cover;
+	padding-right: 0;
+	padding-left: 0;
+	position: relative;
+  }
+  
+  .usa-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url('/assets/american-flag.jpg') no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	z-index: 2;
+  }
+  
+  .usa-wrapper {
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	color: #fff !important;
+	position: relative;
+	z-index: 3;
+  }
+  
+  .usa-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 1.1;
+  }
+  
+  
+.video-item {
+	margin-bottom: 20px;
+  }
+  
+  .support-farmers {
+	height: 535px;
+	padding-bottom: 40px;
+  }
+  
+  
+  @media only screen and (max-width: 1024px) {
+	.join-us-content-block {
+	  top: 40%;
+	}
+  }
+  
+  @media only screen and (max-width: 540px) {
+
+
+	.support-community-wrapper,
+	.aboriginal-wrapper {
+	  padding: 10%;
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+	  justify-content: center;
+	}
+  
+	.join-us-content-block {
+	  width: 90% !important;
+	}
+  
+	.join-us {
+	  background-position: revert;
+	}
+  
+	.join-us-btn-wrapper {
+	  bottom: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+  
+	.join-us-content-block {
+	  top: 40%;
+	}
+  
+	.text-wrapper {
+	  width: 64%;
+	  margin: 20px auto;
+	}
+  
+	.d-none {
+	  display: none;
+	}
+	
+	.aboriginal {
+	height: unset;
+	  }
+	
+	.support-farmers {
+	height: unset;
+	  }
+  
+}
+
+@media only screen and (max-width: 320px) {
+
+
+	.join-us-col {
+	  height: 420px;
+	}
+	
+	.join-us-content-block {
+	  padding: 3%;
+	}
+	
+	.aboriginal-wrapper {
+	  padding: 4% 3% 3% 3%;
+	}
+	
+	.aboriginal-header {
+	  font-size: 54px;
+	}
+	
+}

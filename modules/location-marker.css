@@ -1,0 +1,102 @@
+.location-marker, #location-marker {
+	position: absolute;
+	right: 15px;
+	color: #222;
+	top: 6px;
+  }
+  
+  
+  #location-marker img {
+	width: 12px;
+	margin: 0 4px;
+  }
+  
+  #dropdownMenu-loc {
+	border: none;
+	font-size: 12px;
+	background-color: #fff;
+  }
+  #custom-dropdown .divider {
+	background-color: #505050;
+  }
+  
+  #custom-dropdown {
+	background-color: #222;
+	text-align: center;
+	top: 40px;
+	left: 50%;
+	position: relative;
+	
+  }
+  
+  #location-dropdown .open {
+	float: none;
+  }
+  
+  #custom-dropdown::before {
+	content: "";
+	height: 16px;
+	width: 16px;
+	background-color: #222;
+	position: absolute;
+	top: -8px;
+	/* left: 50%; */
+	transform: translateX(-50%) rotate(45deg);
+  }
+  
+  #custom-dropdown li a {
+	color: #fff;
+  }
+  
+  #custom-dropdown > li > a:focus, #custom-dropdown > li > a:hover {
+	color:#e77a19;
+	text-decoration: none;
+	background-color: transparent;
+  }
+  
+  
+  
+  
+  .btn.dropdown-toggle.location-btn:hover, .btn.dropdown-toggle.location-btn:focus, .btn.dropdown-toggle.location-btn:active, .btn.dropdown-toggle.location-btn:visited {
+	background-color: transparent;
+	box-shadow: none;
+  }
+  
+  
+  .caret.location-caret, #location-caret {
+   
+	border-top: 1px solid #666;
+	border-right: 0px solid transparent;
+	border-left: 1px solid #666;
+	position: relative;
+	margin: 0;
+		margin-top: 0px;
+		margin-left: 0px;
+	height: 12px;
+	width: 12px;
+	transform: rotate(130deg);
+	transition: all 0.6s;
+	margin-top: 0;
+	margin-left: 4px;
+  }
+  
+  #location-marker:hover #location-caret {
+	transform: rotate(220deg);
+	margin-top: -8px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+	#location-marker {
+		right: 70px;
+	  }
+	  
+	  .location-text, .caret.location-caret {
+		display: none;
+	  }
+  }
+  
+  @media only screen and (max-width: 768px) {
+	#location-marker {
+		display: none;
+	  }
+  }

@@ -1,0 +1,120 @@
+/* Blogs and recipes  */
+
+.blog-container {
+	height: 340px;
+  }
+  
+  .recipe {
+	background-color: var(--primary-medium-grey);
+	background-image: url('/assets/recipe-1-420x340.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	height: 340px;
+	position: relative;
+  }
+  
+  .category-pills-wrapper {
+	position: relative;
+	z-index: 10;
+	left: 20px;
+  
+	width: 80%;
+  }
+  
+  .category-pill-items {
+	display: inline-flex;
+	flex-wrap: wrap;
+  }
+  
+  .blog-badge {
+	color: #fff;
+	font-size: inherit;
+	margin: 4px;
+	padding: 6px 8px;
+  }
+  
+  .pill-item {
+	background-color: var(--primary-blue);
+	color: #fff;
+	font-size: inherit;
+	margin: 4px;
+	padding: 6px 8px;
+	border-radius: 20px;
+  }
+  
+  .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--primary-dark-grey);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 0.5s ease;
+	z-index: 100;
+  }
+  
+  .blog {
+	height: 340px;
+	background-color: #c3b664;
+	position: relative;
+  }
+  
+  .blog > img {
+	width: 200px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .recipe-block,
+  .blog-block {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	padding: 12px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-right: 1px solid var(--primary-dark-grey);
+  }
+  
+  .recipe-block {
+	background-color: var(--primary-orange);
+	z-index: 5;
+  }
+  
+  .recipe::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 2;
+  }
+  
+  .blog-block {
+	background-color: var(--primary-dark-grey);
+  }
+  
+  .recipe-header {
+	font-family: alternate-gothic-compressed, sans-serif;
+	color: #fff;
+	font-size: 54px;
+	font-weight: 600;
+	line-height: 1;
+	padding-left: 30px;
+	padding-top: 28px;
+	position: relative;
+	z-index: 5;
+  }
+  

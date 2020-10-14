@@ -1,0 +1,29 @@
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --primary-orange: #FF9700;
+  --primary-blue: #4884c2;
+  --primary-dark-grey: #222222;
+  --primary-medium-grey: #464646;
+  --light-grey: #999;
+  --lighter-grey: #ccc;
+  --off-white-1: #eee;
+
+  --display-font: "alternate-gothic-compressed", sans-serif;
+  --primary-font: 'Montserrat', sans-serif;
+  
+}
+
+.container-fluid.global-bg-color-bg {
+  padding: 0;
+  background-color: var(--primary-blue);
+}
+
+@media only screen and (max-width: 540px) {
+  .container-fluid.global-bg-color-bg {
+    background-color: #fff;
+  }
+}
