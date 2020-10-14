@@ -6,7 +6,7 @@
   
   .recipe {
 	background-color: var(--primary-medium-grey);
-	background-image: url('/assets/recipe-1-420x340.jpg');
+	background-image: url('assets/recipe-1-420x340.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	object-fit: cover;
